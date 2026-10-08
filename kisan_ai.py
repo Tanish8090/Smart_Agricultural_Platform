@@ -343,6 +343,8 @@ def generate_kisan_chat_response(
                 err_str = str(e)
                 last_error = f"SDK {model_name}: {err_str[:120]}"
                 print(f"[POST /api/chat] Model {model_name} SDK error: {err_str[:120]}", flush=True)
+                if '503' in err_str or '429' in err_str or '404' in err_str:
+                    continue
 
         # 2. Resilient Direct REST fallback to official Gemini endpoint
         payload = {
