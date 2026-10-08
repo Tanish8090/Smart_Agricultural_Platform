@@ -1,0 +1,17 @@
+{
+  "crop": "not_a_leaf",
+  "model_type": "classification",
+  "classes": [
+    "Not_A_Leaf",
+    "Plant_Leaf"
+  ],
+  "weights": "best.pt",
+  "image_size": 224,
+  "epochs": 30,
+  "dataset_version": "1.0.0",
+  "training_device": "0",
+  "train_images": 375,
+  "val_images": 40,
+  "test_images": 41,
+  "batch_size": 32
+}

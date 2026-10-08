@@ -1,0 +1,532 @@
+/* ══════════════════════════════════════════════════════════════════════════════
+   Smart Agriculture Platform (SAP) — Unified Design System & Styling
+   Theme: Clean SaaS Interface + Strong Agricultural Accents + Polished Surfaces
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Agricultural Light Theme Tokens */
+  --bg-app: #F7FAF8;
+  --bg-surface: #FFFFFF;
+  --bg-subsurface: #F4F9F3;
+  --bg-highlight: #EDF7EF;
+  --bg-glass: rgba(255, 255, 255, 0.92);
+  
+  /* Single Consistent Card Border System */
+  --border-card: #D9E3DD;
+  --border-feature: #C7D9CF;
+  --border-active: #8FD6B0;
+  --border-input: #C9D8D0;
+  --border-btn-secondary: #BDD5C5;
+  
+  /* Primary & Accent Color Palette */
+  --primary-deep: #12372A;
+  --primary-forest: #1F6B45;
+  --primary-fresh: #2D8A5B;
+  --primary-leaf: #3FAE68;
+  --accent-warm: #F4B942;
+  --accent-amber: #E59A24;
+  --status-error: #D9534F;
+  --text-main: #0F231A;
+  --text-muted: #4A6357;
+  --text-light: #718E81;
+
+  /* Standardized Card Shadows */
+  --shadow-card: 0 4px 18px rgba(20, 55, 42, 0.06);
+  --shadow-card-hover: 0 8px 24px rgba(20, 55, 42, 0.10);
+  --shadow-sm: 0 2px 8px rgba(20, 55, 42, 0.04);
+
+  /* Standardized Radii */
+  --radius-card: 18px;
+  --radius-panel: 22px;
+  --radius-subcard: 14px;
+  --radius-btn: 12px;
+}
+
+.dark {
+  /* Agricultural Dark Theme Tokens */
+  --bg-app: #07130E;
+  --bg-surface: #10241A;
+  --bg-subsurface: #0B1A13;
+  --bg-highlight: #153325;
+  --bg-glass: rgba(16, 36, 26, 0.92);
+  
+  --border-card: rgba(63, 174, 104, 0.22);
+  --border-feature: rgba(63, 174, 104, 0.32);
+  --border-active: #3FAE68;
+  --border-input: rgba(63, 174, 104, 0.28);
+  --border-btn-secondary: rgba(63, 174, 104, 0.35);
+  
+  --text-main: #F0FDF4;
+  --text-muted: #94B8A6;
+  --text-light: #6A8E7C;
+  --shadow-card: 0 4px 18px rgba(0, 0, 0, 0.40);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.60);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.30);
+}
+
+body {
+  font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  overflow-x: hidden;
+  letter-spacing: -0.01em;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* ─── Unified Card & Panel Surfaces ─────────────────────────────────────────── */
+.agri-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agri-card-interactive {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: all 180ms ease;
+}
+
+.agri-card-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--border-feature);
+}
+
+.agri-panel {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--shadow-card);
+}
+
+.agri-subcard {
+  background-color: var(--bg-subsurface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-subcard);
+}
+
+.agri-highlight {
+  background-color: var(--bg-highlight);
+  border: 1px solid var(--border-active);
+  border-radius: var(--radius-subcard);
+}
+
+.glass-surface {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-card);
+}
+
+/* ─── Button Design System ──────────────────────────────────────────────────── */
+.btn-primary {
+  background: linear-gradient(135deg, #1F6B45 0%, #165636 100%);
+  color: #FFFFFF !important;
+  font-weight: 700;
+  border-radius: var(--radius-btn);
+  padding: 0.625rem 1.25rem;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(31, 107, 69, 0.20);
+  transition: all 180ms ease;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #258153 0%, #1a643f 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(31, 107, 69, 0.30);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background-color: #F2F8F3;
+  color: #185C3B !important;
+  border: 1px solid var(--border-btn-secondary);
+  font-weight: 700;
+  border-radius: var(--radius-btn);
+  padding: 0.625rem 1.25rem;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 180ms ease;
+}
+
+.btn-secondary:hover {
+  background-color: #E5F3E7;
+  border-color: #9EC7AD;
+  color: #12482E !important;
+  transform: translateY(-1px);
+}
+
+.dark .btn-secondary {
+  background-color: #0B1A13;
+  border-color: var(--border-btn-secondary);
+  color: #A3E2B8 !important;
+}
+
+.dark .btn-secondary:hover {
+  background-color: #153325;
+  border-color: var(--border-active);
+  color: #C4F1D2 !important;
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, #F4B942 0%, #E59A24 100%);
+  color: #1A180E !important;
+  font-weight: 800;
+  border-radius: var(--radius-btn);
+  padding: 0.625rem 1.25rem;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 14px rgba(244, 185, 66, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 180ms ease;
+}
+
+.btn-accent:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(244, 185, 66, 0.35);
+}
+
+/* ─── Navigation Tabs ────────────────────────────────────────────────────────── */
+.tab-btn {
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 40px;
+  border-radius: var(--radius-btn);
+}
+
+.tab-btn:hover {
+  color: var(--primary-fresh);
+  background-color: rgba(45, 138, 91, 0.08);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #1F6B45 0%, #155737 100%);
+  color: #FFFFFF !important;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(31, 107, 69, 0.25);
+}
+
+.dark .tab-btn.active {
+  background: linear-gradient(135deg, #2E8555 0%, #1A5A38 100%);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 16px rgba(46, 133, 85, 0.35);
+}
+
+/* ─── Form Inputs ───────────────────────────────────────────────────────────── */
+.agri-input {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-input);
+  color: var(--text-main);
+  border-radius: var(--radius-btn);
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  min-height: 42px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.agri-input:focus {
+  outline: none;
+  border-color: #2D8A5B;
+  box-shadow: 0 0 0 3px rgba(45, 138, 91, 0.10);
+  background-color: var(--bg-surface);
+}
+
+.dark .agri-input {
+  background-color: var(--bg-surface);
+  border-color: var(--border-input);
+  color: var(--text-main);
+}
+
+.dark .agri-input:focus {
+  border-color: var(--border-active);
+  box-shadow: 0 0 0 3px rgba(63, 174, 104, 0.18);
+}
+
+/* ─── Standardized Badges ───────────────────────────────────────────────────── */
+.badge-emerald {
+  background-color: #EDF7EF;
+  color: #185C3B;
+  border: 1px solid #C7E8D3;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.dark .badge-emerald {
+  background-color: rgba(45, 138, 91, 0.20);
+  color: #A3E2B8;
+  border-color: rgba(63, 174, 104, 0.35);
+}
+
+.badge-blue {
+  background-color: #EEF4FD;
+  color: #1B4D89;
+  border: 1px solid #C8DCF9;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.dark .badge-blue {
+  background-color: rgba(59, 130, 246, 0.20);
+  color: #93C5FD;
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+.badge-amber {
+  background-color: #FEF8EC;
+  color: #8F5E09;
+  border: 1px solid #F8E2B2;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.dark .badge-amber {
+  background-color: rgba(245, 158, 11, 0.20);
+  color: #FCD34D;
+  border-color: rgba(245, 158, 11, 0.35);
+}
+
+.badge-violet {
+  background-color: #F4F1FD;
+  color: #58339E;
+  border: 1px solid #DCD1F9;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.dark .badge-violet {
+  background-color: rgba(139, 92, 246, 0.20);
+  color: #C4B5FD;
+  border-color: rgba(139, 92, 246, 0.35);
+}
+
+/* ─── Footer Component Styling ──────────────────────────────────────────────── */
+.agri-footer {
+  background-color: #12372A;
+  color: #F3F8F4;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 48px;
+  padding-bottom: 24px;
+  margin-top: 48px;
+}
+
+.agri-footer a,
+.agri-footer button {
+  color: #DDF4E5;
+  transition: color 150ms ease;
+}
+
+.agri-footer a:hover,
+.agri-footer button:hover {
+  color: #7EE2A7;
+}
+
+.agri-footer-secondary {
+  color: #BFD3C6;
+}
+
+.agri-footer-border {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ─── Custom Scrollbar ──────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(31, 107, 69, 0.25);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(63, 174, 104, 0.30);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(31, 107, 69, 0.45);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ─── AI Vision Scanning Laser Beam Animation ──────────────────────────────── */
+.scan-laser-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #3FAE68, #65C466, #3FAE68, transparent);
+  box-shadow: 0 0 15px #3FAE68, 0 0 30px #65C466;
+  animation: scan-laser 2s ease-in-out infinite alternate;
+}
+
+@keyframes scan-laser {
+  0% { top: 0%; }
+  100% { top: 96%; }
+}
+
+/* ─── Chat Animations & Speech ──────────────────────────────────────────────── */
+.chat-bubble-enter {
+  animation: slideUpFade 0.25s ease-out forwards;
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mic-recording-pulse {
+  animation: micPulse 1.2s infinite alternate;
+  background-color: #ef4444 !important;
+  color: #ffffff !important;
+}
+
+@keyframes micPulse {
+  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.6); }
+  100% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+}
+
+.chat-chip {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chat-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(63, 174, 104, 0.2);
+}
+
+/* Markdown formatting inside assistant chat message */
+.chat-markdown h3, .chat-markdown h4 {
+  font-weight: 700;
+  margin-top: 0.6rem;
+  margin-bottom: 0.3rem;
+  color: #1F6B45;
+}
+
+.dark .chat-markdown h3, .dark .chat-markdown h4 {
+  color: #65C466;
+}
+
+.chat-markdown p {
+  margin-bottom: 0.4rem;
+  line-height: 1.55;
+}
+
+.chat-markdown ul, .chat-markdown ol {
+  margin-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.chat-markdown li {
+  margin-bottom: 0.25rem;
+  line-height: 1.45;
+}
+
+.chat-markdown strong {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.chat-markdown hr {
+  border-color: var(--border-card);
+  margin: 0.6rem 0;
+}
+
+.chat-markdown blockquote {
+  border-left: 3px solid #2D8A5B;
+  padding-left: 0.6rem;
+  margin: 0.5rem 0;
+  font-style: italic;
+  background: var(--bg-highlight);
+  border-radius: 0 8px 8px 0;
+}
+
+/* Audio wave animation when speaking */
+.sound-wave-bar {
+  display: inline-block;
+  width: 3px;
+  height: 12px;
+  background-color: #2D8A5B;
+  border-radius: 2px;
+  animation: soundWave 0.8s ease-in-out infinite alternate;
+}
+
+.sound-wave-bar:nth-child(2) { animation-delay: 0.2s; height: 16px; }
+.sound-wave-bar:nth-child(3) { animation-delay: 0.4s; height: 8px; }
+
+@keyframes soundWave {
+  0% { transform: scaleY(0.4); }
+  100% { transform: scaleY(1.2); }
+}
+
+/* ─── Modal Backdrop Animation ──────────────────────────────────────────────── */
+.modal-backdrop-enter {
+  animation: modalBackdropFade 0.2s ease-out forwards;
+}
+
+@keyframes modalBackdropFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content-enter {
+  animation: modalScaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

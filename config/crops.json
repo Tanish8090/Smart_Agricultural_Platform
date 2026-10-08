@@ -1,0 +1,201 @@
+{
+  "crops": [
+    {
+      "id": "wheat",
+      "value": "Wheat",
+      "name_en": "Wheat",
+      "name_hi": "गेहूं",
+      "display_en": "Wheat (Yellow Rust / Healthy)",
+      "display_hi": "गेहूं (पीला रतुआ / स्वस्थ)",
+      "icon": "🌾",
+      "model_dir": "models/wheat",
+      "classes": [
+        "Wheat___Yellow_rust",
+        "Wheat___healthy"
+      ],
+      "diseases": [
+        { "id": "Yellow_rust", "en": "Yellow Rust", "hi": "पीला रतुआ" },
+        { "id": "healthy", "en": "Healthy", "hi": "स्वस्थ" }
+      ]
+    },
+    {
+      "id": "cotton",
+      "value": "Cotton",
+      "name_en": "Cotton",
+      "name_hi": "कपास",
+      "display_en": "Cotton (Bacterial Blight / Healthy)",
+      "display_hi": "कपास (जीवाणु झुलसा / स्वस्थ)",
+      "icon": "🌱",
+      "model_dir": "models/cotton",
+      "classes": [
+        "Cotton___Bacterial_blight",
+        "Cotton___healthy"
+      ],
+      "diseases": [
+        { "id": "Bacterial_blight", "en": "Bacterial Blight", "hi": "जीवाणु झुलसा" },
+        { "id": "healthy", "en": "Healthy", "hi": "स्वस्थ" }
+      ]
+    },
+    {
+      "id": "sugarcane",
+      "value": "Sugarcane",
+      "name_en": "Sugarcane",
+      "name_hi": "गन्ना",
+      "display_en": "Sugarcane (Red Rot / Healthy)",
+      "display_hi": "गन्ना (लाल सड़न / स्वस्थ)",
+      "icon": "🎋",
+      "model_dir": "models/sugarcane",
+      "classes": [
+        "Sugarcane___Red_rot",
+        "Sugarcane___healthy"
+      ],
+      "diseases": [
+        { "id": "Red_rot", "en": "Red Rot", "hi": "लाल सड़न" },
+        { "id": "healthy", "en": "Healthy", "hi": "स्वस्थ" }
+      ]
+    },
+    {
+      "id": "potato",
+      "value": "Potato",
+      "name_en": "Potato",
+      "name_hi": "आलू",
+      "display_en": "Potato (Early Blight / Late Blight / Healthy)",
+      "display_hi": "आलू (अगेती झुलसा / पछेती झुलसा / स्वस्थ)",
+      "icon": "🥔",
+      "model_dir": "models/potato",
+      "classes": [
+        "Potato___Early_blight",
+        "Potato___Late_blight",
+        "Potato___healthy"
+      ],
+      "diseases": [
+        { "id": "Early_blight", "en": "Early Blight", "hi": "अगेती झुलसा" },
+        { "id": "Late_blight", "en": "Late Blight", "hi": "पछेती झुलसा" },
+        { "id": "healthy", "en": "Healthy", "hi": "स्वस्थ" }
+      ]
+    },
+    {
+      "id": "rice",
+      "value": "Rice",
+      "name_en": "Rice",
+      "name_hi": "धान",
+      "display_en": "Rice (Blast / Brown Spot / Healthy)",
+      "display_hi": "धान (ब्लास्ट / भूरा धब्बा / स्वस्थ)",
+      "icon": "🌾",
+      "model_dir": "models/rice",
+      "classes": [
+        "Rice___Blast",
+        "Rice___Brown_spot",
+        "Rice___healthy"
+      ],
+      "diseases": [
+        { "id": "Blast", "en": "Blast", "hi": "ब्लास्ट" },
+        { "id": "Brown_spot", "en": "Brown Spot", "hi": "भूरा धब्बा" },
+        { "id": "healthy", "en": "Healthy", "hi": "स्वस्थ" }
+      ]
+    },
+    {
+      "id": "soybean",
+      "value": "Soybean",
+      "name_en": "Soybean",
+      "name_hi": "सोयाबीन",
+      "display_en": "Soybean (Rust / Healthy)",
+      "display_hi": "सोयाबीन (रस्ट / स्वस्थ)",
+      "icon": "🌿",
+      "model_dir": "models/soybean",
+      "classes": [
+        "Soybean___Rust",
+        "Soybean___healthy"
+      ],
+      "diseases": [
+        { "id": "Rust", "en": "Rust", "hi": "रस्ट" },
+        { "id": "healthy", "en": "Healthy", "hi": "स्वस्थ" }
+      ]
+    },
+    {
+      "id": "tomato",
+      "value": "Tomato",
+      "name_en": "Tomato",
+      "name_hi": "टमाटर",
+      "display_en": "Tomato (Early Blight / Late Blight / Healthy)",
+      "display_hi": "टमाटर (अगेती झुलसा / पछेती झुलसा / स्वस्थ)",
+      "icon": "🍅",
+      "model_dir": "models/tomato",
+      "classes": [
+        "Tomato___Early_blight",
+        "Tomato___Late_blight",
+        "Tomato___healthy"
+      ],
+      "diseases": [
+        { "id": "Early_blight", "en": "Early Blight", "hi": "अगेती झुलसा" },
+        { "id": "Late_blight", "en": "Late Blight", "hi": "पछेती झुलसा" },
+        { "id": "healthy", "en": "Healthy", "hi": "स्वस्थ" }
+      ]
+    },
+    {
+      "id": "corn",
+      "value": "Corn",
+      "name_en": "Corn / Maize",
+      "name_hi": "मक्का",
+      "display_en": "Corn / Maize (Common Rust / Leaf Blight / Healthy)",
+      "display_hi": "मक्का (कॉमन रस्ट / लीफ ब्लाइट / स्वस्थ)",
+      "icon": "🌽",
+      "model_dir": "models/corn",
+      "classes": [
+        "Corn___Common_rust",
+        "Corn___Leaf_blight",
+        "Corn___healthy"
+      ],
+      "diseases": [
+        { "id": "Common_rust", "en": "Common Rust", "hi": "कॉमन रस्ट" },
+        { "id": "Leaf_blight", "en": "Leaf Blight", "hi": "लीफ ब्लाइट" },
+        { "id": "healthy", "en": "Healthy", "hi": "स्वस्थ" }
+      ]
+    },
+    {
+      "id": "apple",
+      "value": "Apple",
+      "name_en": "Apple",
+      "name_hi": "सेब",
+      "display_en": "Apple (Scab / Healthy)",
+      "display_hi": "सेब (स्कैब / स्वस्थ)",
+      "icon": "🍎",
+      "model_dir": "models/apple",
+      "classes": [
+        "Apple___Scab",
+        "Apple___healthy"
+      ],
+      "diseases": [
+        { "id": "Scab", "en": "Scab", "hi": "स्कैब" },
+        { "id": "healthy", "en": "Healthy", "hi": "स्वस्थ" }
+      ]
+    },
+    {
+      "id": "grape",
+      "value": "Grape",
+      "name_en": "Grape",
+      "name_hi": "अंगूर",
+      "display_en": "Grape (Black Rot / Healthy)",
+      "display_hi": "अंगूर (ब्लैक रॉट / स्वस्थ)",
+      "icon": "🍇",
+      "model_dir": "models/grape",
+      "classes": [
+        "Grape___Black_rot",
+        "Grape___healthy"
+      ],
+      "diseases": [
+        { "id": "Black_rot", "en": "Black Rot", "hi": "ब्लैक रॉट" },
+        { "id": "healthy", "en": "Healthy", "hi": "स्वस्थ" }
+      ]
+    }
+  ],
+  "not_a_leaf": {
+    "id": "not_a_leaf",
+    "name": "Not_A_Leaf",
+    "model_dir": "models/not_a_leaf",
+    "classes": [
+      "Not_A_Leaf",
+      "Plant_Leaf"
+    ]
+  }
+}

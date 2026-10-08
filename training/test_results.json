@@ -1,0 +1,152 @@
+{
+  "disease_scanner": {
+    "wheat": {
+      "status": "PASS",
+      "actual_class": "Wheat___healthy",
+      "prediction": "Wheat___healthy",
+      "confidence": 0.9996,
+      "is_leaf": true
+    },
+    "cotton": {
+      "status": "PASS",
+      "actual_class": "Cotton___Bacterial_blight",
+      "prediction": "Cotton___Bacterial_blight",
+      "confidence": 0.9967,
+      "is_leaf": true
+    },
+    "sugarcane": {
+      "status": "PASS",
+      "actual_class": "Sugarcane___healthy",
+      "prediction": "Sugarcane___healthy",
+      "confidence": 0.9347,
+      "is_leaf": true
+    },
+    "potato": {
+      "status": "PASS",
+      "actual_class": "Potato___Early_blight",
+      "prediction": "Potato___Early_blight",
+      "confidence": 1.0,
+      "is_leaf": true
+    },
+    "rice": {
+      "status": "PASS",
+      "actual_class": "Rice___Blast",
+      "prediction": "Rice___Blast",
+      "confidence": 0.9996,
+      "is_leaf": true
+    },
+    "soybean": {
+      "status": "PASS",
+      "actual_class": "Soybean___healthy",
+      "prediction": "Soybean___healthy",
+      "confidence": 1.0,
+      "is_leaf": true
+    },
+    "tomato": {
+      "status": "PASS",
+      "actual_class": "Tomato___Early_blight",
+      "prediction": "Tomato___Early_blight",
+      "confidence": 0.9992,
+      "is_leaf": true
+    },
+    "corn": {
+      "status": "PASS",
+      "actual_class": "Corn___Common_rust",
+      "prediction": "Corn___Common_rust",
+      "confidence": 1.0,
+      "is_leaf": true
+    },
+    "apple": {
+      "status": "PASS",
+      "actual_class": "Apple___healthy",
+      "prediction": "Apple___healthy",
+      "confidence": 1.0,
+      "is_leaf": true
+    },
+    "grape": {
+      "status": "PASS",
+      "actual_class": "Grape___Black_rot",
+      "prediction": "Grape___Black_rot",
+      "confidence": 1.0,
+      "is_leaf": true
+    }
+  },
+  "not_a_leaf": {
+    "status": "PASS",
+    "prediction": "Not_A_Leaf",
+    "confidence": 0.7011,
+    "is_leaf": false
+  },
+  "pincodes": {
+    "208001": {
+      "status": "PASS",
+      "city": "Derapur",
+      "state": "Uttar Pradesh",
+      "lat": 26.4448,
+      "lon": 79.8571
+    },
+    "110001": {
+      "status": "PASS",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "lat": 28.6369,
+      "lon": 77.2183
+    },
+    "500001": {
+      "status": "PASS",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "lat": 17.3862,
+      "lon": 78.462
+    },
+    "462001": {
+      "status": "PASS",
+      "city": "Teonthar Tahsil",
+      "state": "Madhya Pradesh",
+      "lat": 25.0345,
+      "lon": 81.703
+    },
+    "000000": {
+      "status": "PASS",
+      "data": {
+        "status": "error",
+        "pincode": "000000",
+        "message": "Could not find location coordinates for PIN code 000000. Please check the number or search by city name."
+      }
+    },
+    "999999": {
+      "status": "PASS",
+      "data": {
+        "status": "error",
+        "pincode": "999999",
+        "message": "Could not find location coordinates for PIN code 999999. Please check the number or search by city name."
+      }
+    }
+  },
+  "weather": {
+    "Kanpur": {
+      "status": "PASS",
+      "temp": 26.9,
+      "condition": null,
+      "humidity": 70
+    },
+    "Pune": {
+      "status": "PASS",
+      "temp": 27.4,
+      "condition": null,
+      "humidity": 60
+    }
+  },
+  "chatbot": {
+    "en": {
+      "status": "PASS",
+      "response_status": "success",
+      "reply_snippet": "Hello! As your AI Kisan Assistant, I am happy to help you with your wheat crop here in Kanpur. \n\nFor a 2-acre wheat farm"
+    },
+    "hi": {
+      "status": "PASS",
+      "response_status": "success",
+      "reply_snippet": "नमस्ते किसान भाई! 🙏 \n\nकानपुर (उत्तर प्रदेश) की जलोढ़ (आलूसियल/दोमट) मिट्टी और वर्तमान वानस्पतिक वृद्धि (वेजिटेटिव) अवस्थ"
+    }
+  }
+}

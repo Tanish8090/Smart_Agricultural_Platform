@@ -1,0 +1,1199 @@
+/* ══════════════════════════════════════════════════════════════════════════════
+ * Smart Agriculture Platform (SAP) — Android Native Mobile Styles
+ * Active ONLY when running as Capacitor Native Android APK.
+ * Zero effect on Desktop/Web view.
+ * ══════════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+  --mobile-header-height: 56px;
+  --bottom-nav-height: 64px;
+  --mobile-card-radius: 18px;
+  --mobile-btn-radius: 14px;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 1. Global Viewport & Android Native Reset
+ * ══════════════════════════════════════════════════════════════════════════════ */
+html.capacitor-native,
+body.capacitor-native {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+body.capacitor-native {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0 !important;
+  padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)) !important;
+  font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 2. Mobile Header Polish (Compact, Clean, Touch-Optimized)
+ * ══════════════════════════════════════════════════════════════════════════════ */
+
+/* Hide top announcement alert bar on mobile to reclaim critical screen space */
+body.capacitor-native #topAlertBar {
+  display: none !important;
+}
+
+/* Sticky Mobile Header */
+body.capacitor-native header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: auto !important;
+  min-height: var(--mobile-header-height);
+  padding-top: max(6px, env(safe-area-inset-top, 0px)) !important;
+  padding-bottom: 6px !important;
+  padding-left: max(12px, env(safe-area-inset-left, 0px)) !important;
+  padding-right: max(12px, env(safe-area-inset-right, 0px)) !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.2s ease;
+}
+
+.dark body.capacitor-native header {
+  background: rgba(15, 23, 42, 0.94) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+body.capacitor-native header .h-16 {
+  height: 48px !important;
+}
+
+/* Mobile Logo Container */
+body.capacitor-native header .flex.items-center.space-x-3.cursor-pointer {
+  gap: 8px !important;
+}
+
+body.capacitor-native header .w-10.h-10.rounded-xl {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 10px !important;
+}
+
+body.capacitor-native header .w-10.h-10.rounded-xl i {
+  font-size: 16px !important;
+}
+
+body.capacitor-native header span.text-lg.font-extrabold {
+  font-size: 1.15rem !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Location button in Mobile Header */
+body.capacitor-native header button[onclick="openPincodeModal()"] {
+  height: 34px !important;
+  min-height: 34px !important;
+  padding: 0 10px !important;
+  border-radius: 9999px !important;
+  background: rgba(241, 245, 249, 0.9) !important;
+  border: 1px solid rgba(0, 0, 0, 0.07) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.dark body.capacitor-native header button[onclick="openPincodeModal()"] {
+  background: rgba(30, 41, 59, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.capacitor-native #pincodeBadgeText {
+  max-width: 95px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+}
+
+/* Hide desktop crop select pill inside header */
+body.capacitor-native header .hidden.md\:flex {
+  display: none !important;
+}
+
+/* Right Header Controls (Language, Dark Mode, Menu) */
+body.capacitor-native #globalLangToggleBtn {
+  height: 34px !important;
+  min-height: 34px !important;
+  padding: 0 10px !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+body.capacitor-native button[onclick="toggleDarkMode()"] {
+  width: 34px !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  padding: 0 !important;
+  border-radius: 9999px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+body.capacitor-native button[onclick="toggleDarkMode()"] i {
+  font-size: 13px !important;
+}
+
+body.capacitor-native button[onclick="toggleMobileMenu()"] {
+  width: 34px !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  padding: 0 !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+body.capacitor-native button[onclick="toggleMobileMenu()"] i {
+  font-size: 15px !important;
+}
+
+/* Hide desktop tabs bar inside header */
+body.capacitor-native header .hidden.md\:block {
+  display: none !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 3. Main Content Container
+ * ══════════════════════════════════════════════════════════════════════════════ */
+body.capacitor-native main,
+body.capacitor-native .main-content {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  min-height: calc(100dvh - var(--mobile-header-height, 56px)) !important;
+  height: auto !important;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  padding-left: max(12px, env(safe-area-inset-left, 0px)) !important;
+  padding-right: max(12px, env(safe-area-inset-right, 0px)) !important;
+  padding-top: 10px !important;
+  padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px)) !important;
+}
+
+/* Universal Tab View Display Rules on Android Native */
+body.capacitor-native .tab-view.hidden {
+  display: none !important;
+}
+
+body.capacitor-native .tab-view:not(.hidden) {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+}
+
+body.capacitor-native #view-bot:not(.hidden) {
+  display: flex !important;
+}
+
+/* Reduce vertical gap between sections on mobile */
+body.capacitor-native .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(14px * calc(1 - var(--tw-space-y-reverse))) !important;
+  margin-bottom: calc(14px * var(--tw-space-y-reverse)) !important;
+}
+
+body.capacitor-native .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(10px * calc(1 - var(--tw-space-y-reverse))) !important;
+  margin-bottom: calc(10px * var(--tw-space-y-reverse)) !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 4. Active Farm Location & Profile Card
+ *    KEEP ONLY ON: HOME / DASHBOARD
+ *    REMOVE VISUALLY FROM: Weather, Scanner, Fertilizer, Mandi, Kisan Bot
+ * ══════════════════════════════════════════════════════════════════════════════ */
+body.capacitor-native:not([data-active-tab="dashboard"]) #farmLocationHeroBar,
+body.capacitor-native #farmLocationHeroBar.mobile-hidden-tab {
+  display: none !important;
+}
+
+/* Mobile Polish for Farm Location Card when on Dashboard */
+body.capacitor-native[data-active-tab="dashboard"] #farmLocationHeroBar,
+body.capacitor-native:not([data-active-tab]) #farmLocationHeroBar {
+  display: block !important;
+  border-radius: var(--mobile-card-radius) !important;
+  padding: 16px !important;
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #0f766e 100%) !important;
+  box-shadow: 0 8px 24px -4px rgba(6, 78, 59, 0.25) !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 8px !important;
+}
+
+body.capacitor-native #farmLocationHeroBar h1#locationTitle {
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+}
+
+body.capacitor-native #farmLocationHeroBar p#locationSubtext {
+  font-size: 11px !important;
+  line-height: 1.4 !important;
+  color: rgba(209, 250, 229, 0.9) !important;
+}
+
+body.capacitor-native #farmLocationHeroBar .flex.flex-wrap.items-center.gap-2 {
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin-top: 10px !important;
+}
+
+body.capacitor-native #farmLocationHeroBar .flex.items-center.bg-white\/10 {
+  width: 100% !important;
+  border-radius: 14px !important;
+  padding: 3px 4px !important;
+}
+
+body.capacitor-native #pincodeInput {
+  width: 100% !important;
+  font-size: 12px !important;
+  height: 38px !important;
+  padding-left: 10px !important;
+}
+
+body.capacitor-native #farmLocationHeroBar button[onclick="handleLocationSearchSubmit()"] {
+  height: 36px !important;
+  min-height: 36px !important;
+  padding: 0 14px !important;
+  border-radius: 10px !important;
+  font-weight: 800 !important;
+  font-size: 11px !important;
+}
+
+/* Side-by-side action buttons on Farm Location Card */
+body.capacitor-native #heroGpsBtn,
+body.capacitor-native #farmLocationHeroBar button[onclick="openPincodeModal()"] {
+  flex: 1 1 calc(50% - 4px) !important;
+  height: 38px !important;
+  min-height: 38px !important;
+  justify-content: center !important;
+  border-radius: 12px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 5. Mobile Cards System & Shadows
+ * ══════════════════════════════════════════════════════════════════════════════ */
+body.capacitor-native .agri-card,
+body.capacitor-native .agri-panel {
+  border-radius: var(--mobile-card-radius) !important;
+  padding: 14px 16px !important;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  box-shadow: 0 3px 12px -2px rgba(0, 0, 0, 0.04) !important;
+}
+
+.dark body.capacitor-native .agri-card,
+.dark body.capacitor-native .agri-panel {
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.capacitor-native .agri-subcard {
+  border-radius: 14px !important;
+  padding: 12px 14px !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 6. Dashboard Mobile Polish
+ * ══════════════════════════════════════════════════════════════════════════════ */
+
+/* Farm Command Center Welcome Banner */
+body.capacitor-native #view-dashboard .agri-card.p-6.sm\:p-7 {
+  border-radius: var(--mobile-card-radius) !important;
+  padding: 16px !important;
+  background: linear-gradient(135deg, #022c22 0%, #064e3b 50%, #0f766e 100%) !important;
+  box-shadow: 0 8px 24px -4px rgba(2, 44, 34, 0.3) !important;
+}
+
+body.capacitor-native #dashboardGreeting {
+  font-size: 1.35rem !important;
+  font-weight: 900 !important;
+  line-height: 1.25 !important;
+}
+
+body.capacitor-native #dashboardSubtext {
+  font-size: 11px !important;
+  line-height: 1.4 !important;
+}
+
+/* Quick Action Shortcuts Bar on Dashboard */
+body.capacitor-native #view-dashboard .pt-2.border-t.border-emerald-800\/60 {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 8px !important;
+  padding-top: 10px !important;
+}
+
+body.capacitor-native #view-dashboard .pt-2.border-t.border-emerald-800\/60 button {
+  width: 100% !important;
+  min-height: 40px !important;
+  padding: 8px 10px !important;
+  border-radius: 12px !important;
+  justify-content: center !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+}
+
+/* Hide 5th button (Ask AI Bot) on Android so Dashboard has clean 2x2 grid and zero bot content */
+body.capacitor-native #dashboardHeroBotBtn,
+body.capacitor-native #view-dashboard .pt-2.border-t.border-emerald-800\/60 button:last-child {
+  display: none !important;
+}
+
+/* Hide Kisan Bot Quick Launcher Widget on Android Dashboard */
+body.capacitor-native #dashboardKisanBotWidget {
+  display: none !important;
+}
+
+/* Hide Kisan Bot Bridge cards on Android Fertilizer and Mandi pages */
+body.capacitor-native #fertilizerKisanBotCard,
+body.capacitor-native #mandiKisanBotCard {
+  display: none !important;
+}
+
+/* Dashboard Module Cards */
+body.capacitor-native #view-dashboard .grid.grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3 {
+  gap: 12px !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 7. Weather Page Mobile Polish
+ *    (Starts directly with Live Weather card)
+ * ══════════════════════════════════════════════════════════════════════════════ */
+body.capacitor-native #view-weather .bg-gradient-to-br.from-blue-600 {
+  border-radius: var(--mobile-card-radius) !important;
+  padding: 16px !important;
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0f172a 100%) !important;
+  box-shadow: 0 8px 24px -4px rgba(29, 78, 216, 0.3) !important;
+}
+
+body.capacitor-native #tempValue {
+  font-size: 3.5rem !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+
+body.capacitor-native #weatherIconContainer i {
+  font-size: 2.8rem !important;
+}
+
+body.capacitor-native #weatherConditionText {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+}
+
+/* 4 Weather Key Metrics 2x2 Grid on Mobile */
+body.capacitor-native #view-weather .lg\:col-span-2.grid {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 8px !important;
+}
+
+body.capacitor-native #view-weather .lg\:col-span-2.grid .agri-card {
+  padding: 12px !important;
+  border-radius: 14px !important;
+}
+
+body.capacitor-native #view-weather .lg\:col-span-2.grid .w-9.h-9 {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 8px !important;
+}
+
+body.capacitor-native #view-weather .lg\:col-span-2.grid .w-9.h-9 i {
+  font-size: 13px !important;
+}
+
+body.capacitor-native #view-weather .lg\:col-span-2.grid .text-2xl {
+  font-size: 1.25rem !important;
+}
+
+/* Advisory Cards Stack */
+body.capacitor-native #agriAdvisoriesContainer {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+/* Forecast Container */
+body.capacitor-native #forecastContainer {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 8px !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 8. Scanner Mobile Cleanup & Polish (Dedicated AI Tool Feel)
+ *    - Remove redundant branding blocks & repeated model cards above scanner
+ *    - Appear immediately: Title -> Crop Selection -> Upload/Camera -> Scan -> Result
+ * ══════════════════════════════════════════════════════════════════════════════ */
+
+/* Clean compact Scanner Header Banner */
+body.capacitor-native #scannerHeaderBanner {
+  padding: 14px 16px !important;
+  border-radius: var(--mobile-card-radius) !important;
+  background: linear-gradient(135deg, #064e3b 0%, #0d9488 100%) !important;
+  box-shadow: 0 6px 20px -2px rgba(6, 78, 59, 0.25) !important;
+  margin-bottom: 8px !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 2px !important;
+}
+
+/* Remove "NEURAL NETWORK VISION AI ENGINE" badge */
+body.capacitor-native #scannerHeaderBanner .scanner-tech-badge,
+body.capacitor-native #scannerHeaderBanner .tracking-wider {
+  display: none !important;
+}
+
+/* Remove unnecessary explanatory text */
+body.capacitor-native #scannerHeaderBanner .scanner-desc-text,
+body.capacitor-native #scannerHeaderBanner p {
+  display: none !important;
+}
+
+/* Remove repeated On-Device Model badges and repeated model cards above the scanner */
+body.capacitor-native #scannerHeaderBanner .scanner-model-badges,
+body.capacitor-native #scannerHeaderBanner .bg-emerald-500\/20,
+body.capacitor-native #scannerHeaderBanner .bg-white\/10 {
+  display: none !important;
+}
+
+body.capacitor-native #scannerHeaderBanner h2 {
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+}
+
+/* Target Crop Selector Card */
+body.capacitor-native #view-disease .agri-card.p-4.sm\:p-5.flex.flex-col {
+  padding: 12px 14px !important;
+  border-radius: var(--mobile-card-radius) !important;
+  gap: 8px !important;
+}
+
+body.capacitor-native #diseaseCropSelect {
+  width: 100% !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  border-radius: 12px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  padding: 0 12px !important;
+}
+
+/* Camera / Upload Input Options: 2 Clean Mobile Cards */
+body.capacitor-native #view-disease .grid.grid-cols-1.md\:grid-cols-2.gap-6 {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 8px !important;
+}
+
+body.capacitor-native #dropZone,
+body.capacitor-native div[onclick="openCameraModal()"] {
+  min-height: 150px !important;
+  padding: 14px 8px !important;
+  border-radius: var(--mobile-card-radius) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+body.capacitor-native #dropZone .w-16.h-16,
+body.capacitor-native div[onclick="openCameraModal()"] .w-16.h-16 {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 12px !important;
+  font-size: 20px !important;
+}
+
+body.capacitor-native #dropZone h3,
+body.capacitor-native div[onclick="openCameraModal()"] h3 {
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  margin-top: 4px !important;
+}
+
+body.capacitor-native #dropZone p,
+body.capacitor-native div[onclick="openCameraModal()"] p {
+  display: none !important;
+}
+
+body.capacitor-native #dropZone span.badge-emerald,
+body.capacitor-native div[onclick="openCameraModal()"] span.badge-emerald {
+  font-size: 10px !important;
+  padding: 2px 8px !important;
+  margin-top: 4px !important;
+}
+
+/* Sample Leaves Demo Grid */
+body.capacitor-native #view-disease .grid.grid-cols-2.sm\:grid-cols-3.md\:grid-cols-5 {
+  display: flex !important;
+  overflow-x: auto !important;
+  padding-bottom: 6px !important;
+  gap: 8px !important;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+body.capacitor-native #view-disease .grid.grid-cols-2.sm\:grid-cols-3.md\:grid-cols-5::-webkit-scrollbar {
+  display: none;
+}
+
+body.capacitor-native #view-disease .grid.grid-cols-2.sm\:grid-cols-3.md\:grid-cols-5 button {
+  min-width: 90px !important;
+  flex-shrink: 0 !important;
+  padding: 8px !important;
+  border-radius: 12px !important;
+}
+
+body.capacitor-native #view-disease .grid.grid-cols-2.sm\:grid-cols-3.md\:grid-cols-5 .w-12.h-12 {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 8px !important;
+}
+
+/* Preview Card & Diagnose Button */
+body.capacitor-native #diseasePreviewCard {
+  border-radius: var(--mobile-card-radius) !important;
+  padding: 16px !important;
+}
+
+body.capacitor-native #scanButton {
+  width: 100% !important;
+  min-height: 48px !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  border-radius: var(--mobile-btn-radius) !important;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4) !important;
+  letter-spacing: 0.2px !important;
+}
+
+body.capacitor-native #scanButton:active {
+  transform: scale(0.98);
+}
+
+/* Diagnosis Result Card */
+body.capacitor-native #diagHeaderCard {
+  border-radius: var(--mobile-card-radius) !important;
+  padding: 16px !important;
+}
+
+body.capacitor-native #diagTitleEn {
+  font-size: 1.25rem !important;
+  line-height: 1.2 !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 9. Fertilizer Page Mobile Polish
+ *    (Starts directly with Smart Crop & Fertilizer Advisor)
+ * ══════════════════════════════════════════════════════════════════════════════ */
+body.capacitor-native #view-fertilizer .bg-gradient-to-r.from-emerald-800 {
+  border-radius: var(--mobile-card-radius) !important;
+  padding: 16px !important;
+  background: linear-gradient(135deg, #064e3b 0%, #0f766e 60%, #134e4a 100%) !important;
+  box-shadow: 0 8px 24px -4px rgba(6, 78, 59, 0.25) !important;
+}
+
+body.capacitor-native #view-fertilizer h2 {
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+}
+
+body.capacitor-native #view-fertilizer p {
+  font-size: 11px !important;
+  line-height: 1.4 !important;
+}
+
+body.capacitor-native #fertActiveLocationText {
+  font-size: 12px !important;
+}
+
+/* Fertilizer Quick Question Carousel */
+body.capacitor-native #view-fertilizer .flex.items-center.gap-2.overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+body.capacitor-native #view-fertilizer .flex.items-center.gap-2.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+
+body.capacitor-native #view-fertilizer .flex.items-center.gap-2.overflow-x-auto button {
+  min-height: 38px !important;
+  padding: 6px 12px !important;
+  border-radius: 9999px !important;
+  font-size: 11px !important;
+}
+
+/* Fertilizer Form Controls */
+body.capacitor-native #view-fertilizer input,
+body.capacitor-native #view-fertilizer select {
+  height: 44px !important;
+  min-height: 44px !important;
+  border-radius: 12px !important;
+  font-size: 13px !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 10. Mandi Page Mobile Polish
+ *     (Starts directly with Real-Time Mandi Prices & APMC Trends)
+ * ══════════════════════════════════════════════════════════════════════════════ */
+body.capacitor-native #view-market .bg-gradient-to-r.from-blue-900 {
+  border-radius: var(--mobile-card-radius) !important;
+  padding: 16px !important;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #0f172a 100%) !important;
+  box-shadow: 0 8px 24px -4px rgba(30, 58, 138, 0.3) !important;
+}
+
+body.capacitor-native #view-market h2 {
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+}
+
+/* Mandi Commodity Carousel */
+body.capacitor-native .mandi-comm-pill {
+  min-height: 36px !important;
+  padding: 6px 14px !important;
+  font-size: 11px !important;
+  border-radius: 9999px !important;
+}
+
+body.capacitor-native .mandi-comm-pill.active {
+  background: #10b981 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4) !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 11. Kisan Bot Page Mobile Polish
+ *     (Dedicated AI Farming Assistant Experience)
+ * ══════════════════════════════════════════════════════════════════════════════ */
+/* Kisan Bot visibility constraint: MUST ONLY APPEAR ON KISAN BOT PAGE */
+body.capacitor-native #view-bot.hidden,
+body.capacitor-native:not([data-active-tab="bot"]) #view-bot {
+  display: none !important;
+}
+
+/* When on Kisan Bot tab: clean flex container without locking main or body */
+body.capacitor-native #view-bot:not(.hidden),
+body.capacitor-native[data-active-tab="bot"] #view-bot {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+}
+
+body.capacitor-native #kisanBotCard {
+  flex: 1 1 auto !important;
+  width: 100% !important;
+  border-radius: var(--mobile-card-radius, 18px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid rgba(16, 185, 129, 0.15) !important;
+  margin: 0 !important;
+  background: #ffffff !important;
+}
+
+/* Chat Header Bar */
+body.capacitor-native #chatHeaderBar {
+  flex: 0 0 auto !important;
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
+  padding: 8px 12px !important;
+  height: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+}
+
+body.capacitor-native #view-bot .w-11.h-11 {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 9px !important;
+  font-size: 14px !important;
+}
+
+body.capacitor-native #view-bot h2 {
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+}
+
+body.capacitor-native #chatBotStatusBadge {
+  font-size: 9px !important;
+}
+
+/* Context Strip */
+body.capacitor-native #chatContextBanner {
+  flex: 0 0 auto !important;
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
+  padding: 5px 10px !important;
+  font-size: 10px !important;
+  white-space: nowrap !important;
+  overflow-x: auto !important;
+  scrollbar-width: none;
+  min-height: 32px !important;
+  max-height: 36px !important;
+}
+
+body.capacitor-native #chatContextBanner::-webkit-scrollbar {
+  display: none;
+}
+
+/* Chat Messages Area - Dedicated scrollable message window */
+body.capacitor-native #chatMessagesContainer {
+  flex: 1 1 auto !important;
+  height: auto !important;
+  min-height: 240px !important;
+  max-height: 52dvh !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  overscroll-behavior-y: contain !important;
+  padding: 10px 12px 14px 12px !important;
+  scroll-behavior: smooth;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  background: rgba(248, 250, 252, 0.6) !important;
+}
+
+.dark body.capacitor-native #chatMessagesContainer {
+  background: rgba(2, 6, 23, 0.4) !important;
+}
+
+/* Compact Welcome Hero Bubble (shown before first query only) */
+body.capacitor-native #chatWelcomeHero {
+  padding: 12px 14px !important;
+  border-radius: 16px !important;
+  margin: 0 !important;
+}
+
+body.capacitor-native #chatWelcomeHero .w-12.h-12 {
+  width: 36px !important;
+  height: 36px !important;
+  font-size: 18px !important;
+  border-radius: 10px !important;
+}
+
+body.capacitor-native #chatWelcomeHero h3 {
+  font-size: 13.5px !important;
+}
+
+body.capacitor-native #chatWelcomeHero p {
+  font-size: 11px !important;
+}
+
+body.capacitor-native #chatWelcomeHero .grid {
+  gap: 6px !important;
+}
+
+body.capacitor-native #chatWelcomeHero .grid > div {
+  padding: 6px 8px !important;
+  font-size: 10.5px !important;
+  border-radius: 10px !important;
+}
+
+/* Chat Messages Stream */
+body.capacitor-native #chatMessagesList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px !important;
+  min-height: 0 !important;
+}
+
+body.capacitor-native .chat-bubble-enter {
+  margin: 0 !important;
+}
+
+body.capacitor-native .chat-markdown {
+  font-size: 12.5px !important;
+  line-height: 1.55 !important;
+  padding: 10px 14px !important;
+  color: #1e293b !important;
+  word-break: break-word !important;
+}
+
+.dark body.capacitor-native .chat-markdown,
+body.capacitor-native.dark .chat-markdown,
+html.dark body.capacitor-native .chat-markdown {
+  color: #f1f5f9 !important;
+}
+
+body.capacitor-native .chat-markdown p {
+  margin-bottom: 6px !important;
+}
+
+/* Quick Suggestion Chips Wrapper & Chips */
+body.capacitor-native #chatSuggestedChipsWrapper {
+  padding: 4px 6px !important;
+  flex-shrink: 0 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+.dark body.capacitor-native #chatSuggestedChipsWrapper {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.capacitor-native #chatSuggestedChipsContainer {
+  padding: 2px 4px !important;
+  display: flex !important;
+  gap: 6px !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  flex-shrink: 0 !important;
+}
+
+body.capacitor-native #chatSuggestedChipsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+body.capacitor-native .chat-chip {
+  min-height: 28px !important;
+  padding: 4px 10px !important;
+  font-size: 11px !important;
+  border-radius: 9999px !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+
+/* Attached Image Preview */
+body.capacitor-native #chatImagePreviewStrip {
+  padding: 6px 10px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Voice Recording Visualizer */
+body.capacitor-native #chatVoiceVisualizer {
+  padding: 6px 10px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Chat Input Bar - Fixed at bottom of card, strictly non-expanding */
+body.capacitor-native #chatInputBar {
+  flex: 0 0 auto !important;
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
+  height: auto !important;
+  min-height: 52px !important;
+  max-height: 140px !important;
+  padding: 6px 8px !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.dark body.capacitor-native #chatInputBar {
+  background: rgba(15, 23, 42, 0.98) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.capacitor-native #chatForm {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  width: 100% !important;
+}
+
+body.capacitor-native #chatForm button[onclick="toggleAttachmentMenu()"],
+body.capacitor-native #chatMicBtn {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+body.capacitor-native #chatMessageInput {
+  min-height: 38px !important;
+  max-height: 80px !important;
+  border-radius: 18px !important;
+  font-size: 12.5px !important;
+  padding: 8px 12px !important;
+  line-height: 1.35 !important;
+}
+
+body.capacitor-native #chatSendBtn {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+/* Hide floating action bot button on mobile to avoid bottom nav overlap */
+body.capacitor-native button.fixed.bottom-6.right-6.z-30 {
+  display: none !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 12. Android Native Bottom Navigation Bar (Modern Selected Tab Indicator)
+ * ══════════════════════════════════════════════════════════════════════════════ */
+.android-bottom-nav {
+  display: none;
+}
+
+body.capacitor-native .android-bottom-nav {
+  display: flex !important;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(62px + env(safe-area-inset-bottom, 0px)) !important;
+  padding-top: 4px !important;
+  padding-bottom: max(4px, env(safe-area-inset-bottom, 0px)) !important;
+  padding-left: max(6px, env(safe-area-inset-left, 0px)) !important;
+  padding-right: max(6px, env(safe-area-inset-right, 0px)) !important;
+  background: rgba(9, 25, 19, 0.96) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  z-index: 60;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.35);
+}
+
+body.capacitor-native .android-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  color: #94a3b8;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 2px 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  position: relative;
+}
+
+body.capacitor-native .android-nav-item:active {
+  transform: scale(0.92);
+}
+
+body.capacitor-native .android-nav-item i {
+  font-size: 18px;
+  margin-bottom: 2px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Modern Selected Tab Indicator Capsule */
+body.capacitor-native .android-nav-item.active {
+  color: #34d399 !important;
+  font-weight: 800 !important;
+}
+
+body.capacitor-native .android-nav-item.active i {
+  color: #34d399 !important;
+  transform: translateY(-1px) scale(1.1);
+  filter: drop-shadow(0 2px 6px rgba(52, 211, 153, 0.4));
+}
+
+body.capacitor-native .android-nav-item.active::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  width: 36px;
+  height: 24px;
+  background: rgba(16, 185, 129, 0.18);
+  border-radius: 12px;
+  z-index: -1;
+  border: 1px solid rgba(52, 211, 153, 0.25);
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 13. Mobile Buttons & Touch Targets
+ * ══════════════════════════════════════════════════════════════════════════════ */
+body.capacitor-native button,
+body.capacitor-native select,
+body.capacitor-native input[type="button"],
+body.capacitor-native input[type="submit"] {
+  min-height: 44px;
+  touch-action: manipulation;
+}
+
+body.capacitor-native .btn-primary {
+  min-height: 44px !important;
+  border-radius: var(--mobile-btn-radius) !important;
+  font-weight: 800 !important;
+  font-size: 13px !important;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3) !important;
+}
+
+body.capacitor-native .btn-primary:active {
+  transform: scale(0.98);
+}
+
+body.capacitor-native .btn-secondary {
+  min-height: 42px !important;
+  border-radius: var(--mobile-btn-radius) !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+}
+
+body.capacitor-native .btn-secondary:active {
+  transform: scale(0.98);
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 14. Modals (Center Screen, Above Bottom Nav, Scrollable)
+ * ══════════════════════════════════════════════════════════════════════════════ */
+body.capacitor-native .hidden,
+body.capacitor-native .fixed.inset-0.z-50.hidden,
+body.capacitor-native #cameraModal.hidden,
+body.capacitor-native #pincodeModal.hidden,
+body.capacitor-native #farmContextModal.hidden,
+body.capacitor-native #mandiDetailModal.hidden {
+  display: none !important;
+}
+
+body.capacitor-native .fixed.inset-0.z-50:not(.hidden) {
+  z-index: 75 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 16px !important;
+  padding-top: max(16px, env(safe-area-inset-top, 0px)) !important;
+  padding-bottom: max(16px, env(safe-area-inset-bottom, 0px)) !important;
+  background-color: rgba(0, 0, 0, 0.65) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+body.capacitor-native .fixed.inset-0.z-50:not(.hidden) > div {
+  max-height: calc(100dvh - 32px) !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  border-radius: 24px !important;
+  width: 100% !important;
+  max-width: 480px !important;
+  margin: auto !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Camera Modal Specifics */
+body.capacitor-native #cameraModal:not(.hidden) {
+  display: flex !important;
+}
+
+body.capacitor-native #cameraModal > div {
+  max-height: calc(100dvh - 32px) !important;
+  padding: 16px !important;
+}
+
+body.capacitor-native #cameraVideo {
+  max-height: 40dvh !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 16px !important;
+  background-color: #020617 !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 15. Mic Recording Pulse Animation
+ * ══════════════════════════════════════════════════════════════════════════════ */
+.mic-recording-pulse {
+  background: #f43f5e !important;
+  color: #ffffff !important;
+  animation: micPulse 1.2s infinite ease-in-out;
+}
+
+@keyframes micPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(244, 63, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(244, 63, 94, 0);
+  }
+}
+
+/* Scanning Laser Animation */
+.scan-laser-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #34d399, transparent);
+  box-shadow: 0 0 12px #10b981;
+  animation: scanLaser 2s infinite ease-in-out;
+}
+
+@keyframes scanLaser {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+ * 16. Footer Adaptation on Mobile
+ * ══════════════════════════════════════════════════════════════════════════════ */
+body.capacitor-native footer {
+  padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)) !important;
+  margin-top: 16px !important;
+}
+

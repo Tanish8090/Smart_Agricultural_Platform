@@ -1,0 +1,15 @@
+{
+  "name": "sap-farmer-app",
+  "version": "2.0.0",
+  "description": "Smart Agriculture Platform with On-Device AI Disease Inference",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Web assets ready'"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  }
+}

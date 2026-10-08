@@ -1,0 +1,8 @@
+{
+  "appId": "com.sap.agri",
+  "appName": "Smart Agriculture Platform",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "query": "Hello bhai",
+    "status": 200,
+    "api_status": "success",
+    "model": "gemini-3.5-flash-lite",
+    "reply_length": 182,
+    "detected_script": "Devanagari Hindi",
+    "reply_preview": "नमस्ते भाई! मैं आपका AI किसान सहायक हूँ। कानपुर, उत्तर प्रदेश में आपकी गेंहू (Wheat) की फसल से जुड़ी किस मदद की आवश्यकता है? बीज, सिंचाई, खाद या किसी रोग के बारे में जानना चाहते हैं?",
+    "pass": true
+  },
+  {
+    "id": 2,
+    "query": "Yah batao Aalu kheti kaise karte hain",
+    "status": 200,
+    "api_status": "success",
+    "model": "gemini-3.5-flash-lite",
+    "reply_length": 1659,
+    "detected_script": "Devanagari Hindi",
+    "reply_preview": "कानपुर, उत्तर प्रदेश में आलू की खेती (Potato Cultivation) करने के लिए यहाँ मुख्य दिशा-निर्देश दिए गए हैं:\n\n**1. उपयुक्त समय (Sowing Time):**\n* उत्तर प्रदेश के मैदानी इलाकों में आलू की बुवाई का सबसे अच",
+    "pass": true
+  },
+  {
+    "id": 3,
+    "query": "Meri soybean ki kheti mein pani ki samasya hai, kya karun?",
+    "status": 200,
+    "api_status": "success",
+    "model": "gemini-3.5-flash-lite",
+    "reply_length": 1277,
+    "detected_script": "Devanagari Hindi",
+    "reply_preview": "इंदौर, मध्य प्रदेश में सोयाबीन की खेती में पानी की समस्या (सूखा या कम सिंचाई) से निपटने के लिए आप निम्नलिखित व्यावहारिक उपाय अपना सकते हैं:\n\n1. **वर्षा जल संचयन (Rainwater Harvesting) और संरक्षण:** यद",
+    "pass": true
+  },
+  {
+    "id": 4,
+    "query": "गेहूं में पीली पत्तियां क्यों हो रही हैं?",
+    "status": 200,
+    "api_status": "success",
+    "model": "gemini-3.5-flash-lite",
+    "reply_length": 1351,
+    "detected_script": "Devanagari Hindi",
+    "reply_preview": "गेहूं की फसल में पत्तियां पीली होने के कई कारण हो सकते हैं। करनाल, हरियाणा के क्षेत्र में इस समस्या के मुख्य कारण नीचे दिए गए हैं:\n\n1. **नाइट्रोजन की कमी (Nitrogen Deficiency):** यह सबसे आम कारण है। इ",
+    "pass": true
+  },
+  {
+    "id": 5,
+    "query": "What fertilizer information should I consider for wheat?",
+    "status": 200,
+    "api_status": "success",
+    "model": "gemini-3.5-flash-lite",
+    "reply_length": 2317,
+    "detected_script": "English",
+    "reply_preview": "For wheat farming in Punjab, here is the essential fertilizer and nutrient management information you should consider to ensure a good yield:\n\n### 1. Recommended Nutrient Doses (per acre)\nFor high-yie",
+    "pass": true
+  },
+  {
+    "id": 6,
+    "query": "How should I irrigate potato?",
+    "status": 200,
+    "api_status": "success",
+    "model": "gemini-3.5-flash-lite",
+    "reply_length": 2015,
+    "detected_script": "English",
+    "reply_preview": "For potato cultivation in Agra, Uttar Pradesh, proper irrigation is crucial for good tuber yield and quality. Here is a practical guide on how to irrigate your potato crop:\n\n**1. Critical Stages for I",
+    "pass": true
+  },
+  {
+    "id": 7,
+    "query": "Tomato ke patton par daag hain, kya karun?",
+    "status": 200,
+    "api_status": "success",
+    "model": "gemini-3.5-flash-lite",
+    "reply_length": 1162,
+    "detected_script": "Devanagari Hindi",
+    "reply_preview": "Nashik में टमाटर की फसल में पत्तों पर दाग (spots) होना एक आम समस्या है, जो फंगस, बैक्टीरिया या कीट के कारण हो सकती है। सही इलाज के लिए यह जानना जरूरी है कि दाग किस तरह के हैं (जैसे- भूरे धब्बे, पीले घ",
+    "pass": true
+  },
+  {
+    "id": 8,
+    "query": "What is soil pH?",
+    "status": 200,
+    "api_status": "success",
+    "model": "gemini-3.5-flash-lite",
+    "reply_length": 1321,
+    "detected_script": "English",
+    "reply_preview": "**Soil pH** is a measure of how acidic or alkaline (basic) your soil is. \n\nIt is measured on a scale from **0 to 14**:\n* **pH 7** is **neutral** (neither acidic nor alkaline).\n* **pH below 7** is **ac",
+    "pass": true
+  }
+]

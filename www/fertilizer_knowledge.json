@@ -1,0 +1,358 @@
+{
+  "wheat": {
+    "crop_en": "Wheat",
+    "crop_hi": "गेहूं",
+    "general_npk_ratio": "120:60:40 kg/ha",
+    "general_guidance_en": "Standard general recommendation for irrigated timely-sown wheat is 120 kg Nitrogen (N), 60 kg Phosphorus (P2O5), and 40 kg Potassium (K2O) per hectare. Apply full P and K along with 1/3 N at sowing (basal), and remaining N in two equal splits at crown root initiation (CRI) and tillering.",
+    "general_guidance_hi": "सिंचित समय पर बोई गई गेहूं के लिए सामान्य अनुशंसित NPK अनुपात 120:60:40 किग्रा/हेक्टेयर है। पूरा फास्फोरस और पोटाश तथा एक-तिहाई नाइट्रोजन बुवाई के समय (बेसल) डालें। शेष नाइट्रोजन दो बार में (CRI शिखर जड़ें और कल्ले फूटते समय) दें।",
+    "stages": {
+      "Sowing / Basal": {
+        "en": "Apply full Phosphorus (DAP/SSP), full Potash (MOP), and 1/3rd Nitrogen (Urea) at field preparation/drilling.",
+        "hi": "बुवाई के समय पूरा फास्फोरस (DAP/SSP), पूरा पोटाश (MOP) और 1/3 नाइट्रोजन (यूरिया) खेत की तैयारी या ड्रिलिंग के समय दें।"
+      },
+      "Vegetative": {
+        "en": "First top-dressing of Nitrogen (40 kg N/ha, ~50 kg Urea) at 21-25 days after sowing during first irrigation (CRI stage). Second top-dressing at 40-45 days during tillering.",
+        "hi": "बुवाई के 21-25 दिन बाद पहली सिंचाई (CRI अवस्था) पर पहली टॉप-ड्रेसिंग (लगभग 50 किग्रा यूरिया) दें। दूसरी टॉप-ड्रेसिंग 40-45 दिन बाद कल्ले फूटते समय दें।"
+      },
+      "Flowering": {
+        "en": "Ensure adequate soil moisture. Avoid nitrogen broadcast at this stage. Foliar spray of 1% Potassium Nitrate (13-0-45) can improve grain filling and heat tolerance.",
+        "hi": "खेत में पर्याप्त नमी बनाए रखें। इस समय यूरिया का छिड़काव न करें। दाना भराव और गर्मी से बचाव के लिए 1% पोटेशियम नाइट्रेट (13-0-45) का छिड़काव करें।"
+      },
+      "Fruit/Grain Formation": {
+        "en": "Do not apply heavy soil nitrogen. Maintain light irrigation during milk/dough stages. Foliar zinc (0.5% ZnSO4) can be given if leaves show interveinal whitening.",
+        "hi": "मिट्टी में भारी नाइट्रोजन न डालें। दूधिया अवस्था में हल्की सिंचाई बनाए रखें। पत्तियों में सफेदी दिखे तो 0.5% जिंक सल्फेट का पर्णीय छिड़काव करें।"
+      },
+      "Harvest": {
+        "en": "Stop fertilizer applications. Withhold irrigation 10-15 days before harvest to allow uniform crop drying.",
+        "hi": "उर्वरक प्रयोग पूरी तरह बंद करें। कटाई से 10-15 दिन पूर्व सिंचाई रोक दें ताकि फसल समान रूप से सूख सके।"
+      }
+    },
+    "irrigation_relation_en": "Always apply top-dressed urea in moist soil or immediately before a light irrigation. Avoid broadcasting fertilizer in dry soil or right before heavy storms to prevent leaching and volatilization.",
+    "irrigation_relation_hi": "यूरिया की टॉप-ड्रेसिंग हमेशा पर्याप्त नमी वाली मिट्टी में या हल्की सिंचाई से तुरंत पहले करें। सूखे खेत में या भारी बारिश की संभावना होने पर खाद न डालें।",
+    "deficiencies": {
+      "nitrogen": {
+        "symptom_en": "Uniform yellowing (chlorosis) of older lower leaves starting from leaf tips backwards.",
+        "symptom_hi": "पुरानी निचली पत्तियों का सिरे से पीछे की ओर हल्का पीला पड़ना (क्लोरोसिस)।",
+        "action_en": "Top-dress 25-30 kg Urea per acre or spray 2% Urea solution in clear weather.",
+        "action_hi": "प्रति एकड़ 25-30 किग्रा यूरिया की टॉप-ड्रेसिंग करें या 2% यूरिया घोल का छिड़काव करें।"
+      },
+      "zinc": {
+        "symptom_en": "Chlorotic white/yellow streaks in third and fourth leaves, stunted tillering (Khaira-like symptoms).",
+        "symptom_hi": "तीसरी और चौथी पत्ती में सफेद या पीली धारियां और कल्ले कम फूटना।",
+        "action_en": "Foliar spray of 0.5% Zinc Sulfate (heptahydrate) + 0.25% slaked lime.",
+        "action_hi": "0.5% जिंक सल्फेट (21%) + 0.25% बुझा हुआ चूना मिलाकर छिड़काव करें।"
+      },
+      "potassium": {
+        "symptom_en": "Marginal scorching and brown necrosis of leaf tips and margins; weak stems prone to lodging.",
+        "symptom_hi": "पत्तियों के किनारों और सिरों का झुलसना/भूरा होना तथा तने का कमजोर होना।",
+        "action_en": "Apply 15-20 kg Muriate of Potash (MOP) per acre or foliar spray 1% SOP (0-0-50).",
+        "action_hi": "15-20 किग्रा MOP प्रति एकड़ डालें या 1% पोटेशियम सल्फेट (0-0-50) का छिड़काव करें।"
+      }
+    }
+  },
+  "rice": {
+    "crop_en": "Rice / Paddy",
+    "crop_hi": "धान / चावल",
+    "general_npk_ratio": "120:50:50 kg/ha",
+    "general_guidance_en": "Standard general recommendation for semi-dwarf high-yielding rice is 120 kg N, 50 kg P2O5, and 50 kg K2O per hectare. Apply full P and 50% K as basal at puddling. Split N into 3 stages: 1/3 basal, 1/3 active tillering (21 days), and 1/3 panicle initiation (40-45 days).",
+    "general_guidance_hi": "उन्नत धान के लिए सामान्य अनुशंसित NPK अनुपात 120:50:50 किग्रा/हेक्टेयर है। लेह (कद्दू) करते समय पूरा फास्फोरस व 50% पोटाश बेसल दें। नाइट्रोजन को 3 बराबर भागों में बांटकर दें (रोपाई, कल्ले फूटते समय, और बाली बनते समय)।",
+    "stages": {
+      "Sowing / Basal": {
+        "en": "Incorporate full DAP/SSP and half MOP into puddle soil before transplanting.",
+        "hi": "रोपाई से पहले लेह में पूरा DAP/SSP और आधा MOP अच्छी तरह मिला दें।"
+      },
+      "Vegetative": {
+        "en": "Apply 1/3rd Nitrogen (Urea) at active tillering (20-25 days after transplanting). Apply 25 kg/ha Zinc Sulfate.",
+        "hi": "रोपाई के 20-25 दिन बाद कल्ले फूटते समय 1/3 नाइट्रोजन (यूरिया) दें। 25 किग्रा जिंक सल्फेट प्रति हेक्टेयर डालें।"
+      },
+      "Flowering": {
+        "en": "Apply final 1/3rd Nitrogen at Panicle Initiation (PI) stage. Maintain 3-5 cm standing water.",
+        "hi": "बाली निकलने की शुरुआत (PI अवस्था) पर अंतिम 1/3 नाइट्रोजन दें। खेत में 3-5 सेमी पानी बनाए रखें।"
+      },
+      "Fruit/Grain Formation": {
+        "en": "Avoid urea broadcast. Maintain shallow water during grain filling. Spray 13-0-45 if needed for grain weight.",
+        "hi": "यूरिया न डालें। दाना भरते समय खेत में नमी बनाए रखें। दाने के वजन के लिए 13-0-45 का छिड़काव उपयोगी है।"
+      },
+      "Harvest": {
+        "en": "Drain standing water from field 10 days prior to harvest.",
+        "hi": "कटाई से 10 दिन पहले खेत से अतिरिक्त पानी निकाल दें।"
+      }
+    },
+    "irrigation_relation_en": "Apply nitrogen fertilizers when water is drained or soil is just saturated, then irrigate after 24-48 hours to minimize ammonia volatilization.",
+    "irrigation_relation_hi": "खेत से अतिरिक्त पानी कम होने पर यूरिया डालें, फिर 24-48 घंटे बाद पानी दें ताकि खाद का नुकसान न हो।",
+    "deficiencies": {
+      "zinc": {
+        "symptom_en": "Khaira disease: rust-colored brown spots on lower leaves 2-3 weeks after transplanting.",
+        "symptom_hi": "खैरा रोग: रोपाई के 2-3 सप्ताह बाद निचली पत्तियों पर कत्थई/भूरे धब्बे बनना।",
+        "action_en": "Foliar spray of 5 kg Zinc Sulfate + 2.5 kg Slaked Lime per hectare in 500L water.",
+        "action_hi": "5 किग्रा जिंक सल्फेट + 2.5 किग्रा चूना 500 लीटर पानी में घोलकर प्रति हेक्टेयर छिड़कें।"
+      },
+      "nitrogen": {
+        "symptom_en": "Pale yellowish leaves, reduced tiller production, thin stems.",
+        "symptom_hi": "पत्तियों का पीला पड़ना, कल्ले बहुत कम निकलना, तना पतला होना।",
+        "action_en": "Broadcast 30-35 kg Urea per acre after draining excess surface water.",
+        "action_hi": "पानी का स्तर कम करके 30-35 किग्रा यूरिया प्रति एकड़ बुरकें।"
+      }
+    }
+  },
+  "potato": {
+    "crop_en": "Potato",
+    "crop_hi": "आलू",
+    "general_npk_ratio": "150:80:100 kg/ha",
+    "general_guidance_en": "General recommendation for potato is 150 kg N, 80 kg P2O5, and 100 kg K2O per hectare. Potassium is critical for tuber enlargement and starch synthesis. Apply 50% N, full P, and full K at planting. Top-dress remaining 50% N at first earthing up (30-35 days).",
+    "general_guidance_hi": "आलू की फसल के लिए सामान्य NPK अनुशंसा 150:80:100 किग्रा/हेक्टेयर है। कंद के विकास और गुणवत्ता के लिए पोटाश बेहद जरूरी है। बुवाई पर 50% N, पूरा P व पूरा K दें। शेष 50% N पहली मिट्टी चढ़ाते समय दें।",
+    "stages": {
+      "Sowing / Basal": {
+        "en": "Apply full DAP/SSP, full Potassium Sulfate (SOP) or MOP, and half Urea in planting furrows below tuber level.",
+        "hi": "बुवाई की नालियों में कंद के नीचे पूरा DAP/SSP, पूरा पोटाश और आधी यूरिया मिट्टी में मिलाएं।"
+      },
+      "Vegetative": {
+        "en": "Top-dress remaining nitrogen along with earthing-up operation at 30-35 days after planting.",
+        "hi": "बुवाई के 30-35 दिन बाद मिट्टी चढ़ाते समय बची हुई नाइट्रोजन की टॉप-ड्रेसिंग करें।"
+      },
+      "Fruit/Grain Formation": {
+        "en": "Tuber bulking stage: Spray 0:0:50 (Potassium Sulfate) @ 1.5% to boost tuber weight and dry matter.",
+        "hi": "कंद फुलाव अवस्था: कंद का आकार और वजन बढ़ाने के लिए 0:0:50 का 1.5% छिड़काव करें।"
+      },
+      "Harvest": {
+        "en": "Dehaulm (cut foliage) 10-12 days before digging to cure tuber skins.",
+        "hi": "खुदाई से 10-12 दिन पहले बेल काट दें (डिहॉल्मिंग) ताकि आलू का छिलका मजबूत हो जाए।"
+      }
+    },
+    "irrigation_relation_en": "Maintain consistent furrow soil moisture without waterlogging. Water stress during tuber initiation causes split tubers.",
+    "irrigation_relation_hi": "नालियों में समान नमी बनाए रखें, जलभराव न होने दें। कंद बनते समय पानी की कमी से आलू फट सकते हैं।",
+    "deficiencies": {
+      "potassium": {
+        "symptom_en": "Dark green leaves followed by bronze spotting, marginal curling, and poor tuber enlargement.",
+        "symptom_hi": "पत्तियों पर कांस्य (ब्रॉन्ज) जैसे धब्बे, किनारे मुड़ना और आलू का आकार छोटा रहना।",
+        "action_en": "Apply Potassium Sulfate (0:0:50) foliar spray @ 10g per liter water.",
+        "action_hi": "पोटेशियम सल्फेट (0:0:50) का 10 ग्राम प्रति लीटर पानी में घोलकर छिड़काव करें।"
+      }
+    }
+  },
+  "tomato": {
+    "crop_en": "Tomato",
+    "crop_hi": "टमाटर",
+    "general_npk_ratio": "120:80:100 kg/ha",
+    "general_guidance_en": "General recommendation is 120 kg N, 80 kg P2O5, and 100 kg K2O/ha. Calcium and Boron are vital to prevent blossom end rot and fruit cracking. Apply full P, 1/3 N, and 1/3 K at transplanting.",
+    "general_guidance_hi": "टमाटर के लिए सामान्य NPK अनुशंसा 120:80:80-100 किग्रा/हेक्टेयर है। फल फटने और सड़ांध रोकने के लिए कैल्शियम और बोरॉन आवश्यक हैं। रोपाई पर पूरा P, 1/3 N और 1/3 K दें।",
+    "stages": {
+      "Sowing / Basal": {
+        "en": "Incorporate FYM (20-25 t/ha) + basal NPK (30:80:30 kg/ha) in beds before transplanting.",
+        "hi": "रोपाई से पहले क्यारियों में 20-25 टन सड़ी गोबर खाद और बेसल NPK (30:80:30) मिलाएं।"
+      },
+      "Vegetative": {
+        "en": "Apply nitrogen and potash split (30 kg N + 25 kg K2O/ha) at 30 days after transplanting.",
+        "hi": "रोपाई के 30 दिन बाद 30 किग्रा N और 25 किग्रा K2O की टॉप-ड्रेसिंग करें।"
+      },
+      "Flowering": {
+        "en": "Foliar spray of Solubor (Boron 0.1%) and Calcium Nitrate (0.5%) to enhance fruit set and flower retention.",
+        "hi": "फूल झड़ने से रोकने और फल बनने के लिए बोरॉन (0.1%) और कैल्शियम नाइट्रेट (0.5%) का छिड़काव करें।"
+      },
+      "Fruit/Grain Formation": {
+        "en": "Apply 0:0:50 or 13:0:45 foliar spray at fruit enlargement for firm, shiny, red fruits.",
+        "hi": "फलों के विकास पर 0:0:50 या 13:0:45 का छिड़काव करें जिससे फल ठोस, चमकदार और लाल बनें।"
+      }
+    },
+    "irrigation_relation_en": "Adopt drip irrigation where possible. Irregular wetting causes blossom end rot and severe skin cracking.",
+    "irrigation_relation_hi": "हो सके तो ड्रिप सिंचाई अपनाएं। अनियमित पानी देने से फलों के निचले हिस्से में सड़न और छिलका फटने की समस्या आती है।",
+    "deficiencies": {
+      "calcium": {
+        "symptom_en": "Blossom End Rot (BER): black sunken leathery patch at bottom of developing fruit.",
+        "symptom_hi": "ब्लॉसम एंड रॉट: फल के निचले हिस्से का काला और चपटा होकर सड़ना।",
+        "action_en": "Foliar spray of Calcium Nitrate @ 5g/L water every 10 days during fruit set.",
+        "action_hi": "फल बनने के समय 5 ग्राम प्रति लीटर कैल्शियम नाइट्रेट का 10 दिन के अंतराल पर छिड़काव करें।"
+      }
+    }
+  },
+  "cotton": {
+    "crop_en": "Cotton",
+    "crop_hi": "कपास",
+    "general_npk_ratio": "120:60:60 kg/ha",
+    "general_guidance_en": "Standard general recommendation for Bt Cotton is 120:60:60 kg NPK/ha in black cotton soils. Split nitrogen in 3 doses: basal, square formation, and peak boll development. Avoid excess N which causes excessive vegetative growth.",
+    "general_guidance_hi": "बीटी कपास के लिए सामान्य अनुशंसा 120:60:60 किग्रा NPK/हेक्टेयर है। नाइट्रोजन को 3 बार में दें (बुवाई, डोडी बनते समय, और गूलर विकास पर)। अधिक यूरिया से पौधे अनावश्यक लंबे होते हैं।",
+    "stages": {
+      "Sowing / Basal": {
+        "en": "Apply full P, 1/3 N, and 1/3 K along with FYM during field preparation.",
+        "hi": "खेत की तैयारी के समय पूरा P, 1/3 N और 1/3 K गोबर की खाद के साथ दें।"
+      },
+      "Vegetative": {
+        "en": "Top-dress 1/3rd Nitrogen at squaring stage (40-45 DAS). Foliar spray Magnesium Sulfate (1%).",
+        "hi": "डोडी बनने की अवस्था (40-45 दिन) पर 1/3 नाइट्रोजन दें। मैग्नीशियम सल्फेट (1%) का छिड़काव करें।"
+      },
+      "Flowering": {
+        "en": "Spray 13:0:45 (2%) and Boron (0.1%) during peak flowering to prevent square and boll dropping.",
+        "hi": "फूल आते समय डोडी और गूलर झड़ने से रोकने के लिए 13:0:45 (2%) और बोरॉन (0.1%) का छिड़काव करें।"
+      },
+      "Fruit/Grain Formation": {
+        "en": "Apply remaining Nitrogen and Potash during boll development for heavy fiber weight.",
+        "hi": "गूलर के विकास पर बची हुई नाइट्रोजन और पोटाश दें ताकि रेशे का वजन और चमक बढ़े।"
+      }
+    },
+    "irrigation_relation_en": "Avoid water stagnation in black soil. Give critical irrigation during squaring and boll development.",
+    "irrigation_relation_hi": "काली मिट्टी में जलभराव न होने दें। डोडी और गूलर बनते समय उचित सिंचाई अवश्य करें।",
+    "deficiencies": {
+      "magnesium": {
+        "symptom_en": "Reddening of cotton leaves between veins, purplish tint on older leaves.",
+        "symptom_hi": "कपास की पत्तियों का नसों के बीच लाल या बैंगनी रंग का हो जाना।",
+        "action_en": "Foliar spray of Magnesium Sulfate @ 10g per liter water.",
+        "action_hi": "मैग्नीशियम सल्फेट 10 ग्राम प्रति लीटर पानी में घोलकर छिड़काव करें।"
+      }
+    }
+  },
+  "sugarcane": {
+    "crop_en": "Sugarcane",
+    "crop_hi": "गन्ना",
+    "general_npk_ratio": "250:80:80 kg/ha",
+    "general_guidance_en": "Sugarcane requires high nutrition: 250 kg N, 80 kg P2O5, and 80 kg K2O/ha. Complete nitrogen application within 90-120 days of planting; late nitrogen reduces sucrose recovery.",
+    "general_guidance_hi": "गन्ने को अधिक पोषण की आवश्यकता होती है: 250 किग्रा N, 80 किग्रा P2O5 और 80 किग्रा K2O/हेक्टेयर। बुवाई के 90-120 दिनों के भीतर पूरा नाइट्रोजन दे दें; देर से खाद देने पर चीनी की मात्रा घटती है।",
+    "stages": {
+      "Sowing / Basal": {
+        "en": "Apply full P, 1/3rd K, and 1/4th N in planting furrows under setts.",
+        "hi": "बुवाई की नाली में टुकड़ों (सेट्स) के नीचे पूरा P, 1/3 K और 1/4 N डालें।"
+      },
+      "Vegetative": {
+        "en": "Tillering & formative stage (45 & 90 DAS): Apply remaining N in two splits with earthing up.",
+        "hi": "कल्ले निकलते और बढ़वार के समय (45 व 90 दिन): बची हुई नाइट्रोजन दो बार में मिट्टी चढ़ाते हुए दें।"
+      },
+      "Fruit/Grain Formation": {
+        "en": "Grand growth stage: Apply remaining Potash (MOP) to boost cane girth and sugar content.",
+        "hi": "मुख्य बढ़वार अवस्था: गन्ने की मोटाई और मिठास बढ़ाने के लिए शेष पोटाश (MOP) दें।"
+      }
+    },
+    "irrigation_relation_en": "Irrigate immediately after each fertilizer application. Water stress in formative phase severely reduces cane yield.",
+    "irrigation_relation_hi": "खाद देने के तुरंत बाद सिंचाई करें। शुरुआती बढ़वार में पानी की कमी से गन्ने की पैदावार बहुत घट जाती है।",
+    "deficiencies": {
+      "iron": {
+        "symptom_en": "Interveinal chlorosis in young top leaves, turning completely bleached white.",
+        "symptom_hi": "गन्ने की ऊपरी नई पत्तियों का नसों के बीच पीला होकर पूरी तरह सफेद पड़ना।",
+        "action_en": "Spray 1% Ferrous Sulfate (FeSO4) + 0.1% Citric Acid.",
+        "action_hi": "1% फेरस सल्फेट + 0.1% साइट्रिक एसिड मिलाकर छिड़कें।"
+      }
+    }
+  },
+  "corn": {
+    "crop_en": "Corn / Maize",
+    "crop_hi": "मक्का",
+    "general_npk_ratio": "120:60:40 kg/ha",
+    "general_guidance_en": "Standard general recommendation for hybrid maize is 120 kg N, 60 kg P2O5, and 40 kg K2O/ha. Split N: 1/3 basal, 1/3 knee-high (30 DAS), and 1/3 tasseling/silking (55 DAS).",
+    "general_guidance_hi": "संकर मक्का के लिए सामान्य अनुशंसा 120:60:40 किग्रा NPK/हेक्टेयर है। नाइट्रोजन को 3 बार में दें: 1/3 बुवाई पर, 1/3 घुटने तक ऊंचाई पर (30 दिन), और 1/3 भुट्टा/मंजरी आते समय (55 दिन)।",
+    "stages": {
+      "Sowing / Basal": {
+        "en": "Apply full P, full K, and 1/3 N 5 cm below seed level.",
+        "hi": "बुवाई के समय बीज से 5 सेमी नीचे पूरा P, पूरा K और 1/3 N डालें।"
+      },
+      "Vegetative": {
+        "en": "Knee-high stage (30 DAS): Top-dress 1/3rd Urea in bands 10 cm away from crop rows.",
+        "hi": "घुटने तक ऊंचाई (30 दिन): 1/3 यूरिया कतारों से 10 सेमी दूर मिट्टी में दें।"
+      },
+      "Flowering": {
+        "en": "Tasseling/Silking stage: Apply final 1/3rd Nitrogen. Critical moisture phase.",
+        "hi": "मंजरी और रेशे (सिल्क) निकलते समय अंतिम 1/3 नाइट्रोजन दें। इस समय नमी अनिवार्य है।"
+      }
+    },
+    "irrigation_relation_en": "Maize is highly sensitive to both waterlogging and drought during tasseling and silking.",
+    "irrigation_relation_hi": "मक्का में फूल और भुट्टा आते समय न तो खेत में पानी ठहरना चाहिए और न ही सूखा पड़ना चाहिए।",
+    "deficiencies": {
+      "phosphorus": {
+        "symptom_en": "Purplish red coloration along edges of lower leaves and slow root establishment.",
+        "symptom_hi": "निचली पत्तियों के किनारों का बैंगनी-लाल होना और जड़ें कमजोर रहना।",
+        "action_en": "Ensure proper basal DAP application; spray 1% 12:61:00 (Mono Ammonium Phosphate).",
+        "action_hi": "शुरुआत में DAP दें; आपात स्थिति में 1% 12:61:00 (MAP) का छिड़काव करें।"
+      }
+    }
+  },
+  "soybean": {
+    "crop_en": "Soybean",
+    "crop_hi": "सोयाबीन",
+    "general_npk_ratio": "30:60:40:20 (NPK + Sulfur) kg/ha",
+    "general_guidance_en": "As a legume, soybean fixes atmospheric nitrogen. Only a starter nitrogen dose of 20-30 kg N/ha is needed. Sulfur (20 kg/ha) and Phosphorus (60 kg P2O5/ha) are vital for root nodules and high oil content.",
+    "general_guidance_hi": "दलहनी फसल होने के कारण सोयाबीन वायुमंडलीय नाइट्रोजन स्वयं स्थिर करती है। केवल 20-30 किग्रा N शुरुआती खुराक चाहिए। ग्रंथियों और तेल की मात्रा के लिए सल्फर (20 किग्रा) और फास्फोरस (60 किग्रा) सबसे जरूरी हैं।",
+    "stages": {
+      "Sowing / Basal": {
+        "en": "Seed inoculation with Rhizobium & PSB. Apply 20 kg N, 60 kg P2O5, 40 kg K2O, and 20 kg Sulfur (Bentonite) at sowing.",
+        "hi": "राइजोबियम और PSB से बीज शोधन करें। बुवाई पर 20 kg N, 60 kg P, 40 kg K और 20 kg सल्फर बेसल दें।"
+      },
+      "Flowering": {
+        "en": "Flower initiation (35-40 DAS): Foliar spray of 2% DAP or 19:19:19 to prevent flower drop.",
+        "hi": "फूल आने पर (35-40 दिन): 2% DAP या 19:19:19 का छिड़काव करें जिससे फूल न झड़ें।"
+      },
+      "Fruit/Grain Formation": {
+        "en": "Pod filling stage (55-60 DAS): Spray 0:0:50 @ 1.5% for bold, high-oil seeds.",
+        "hi": "फली भरते समय (55-60 दिन): दानों को पुष्ट और चमकदार बनाने के लिए 0:0:50 का 1.5% छिड़काव करें।"
+      }
+    },
+    "irrigation_relation_en": "Soybean requires well-drained soil. Water stagnation causes nodule death and root rot.",
+    "irrigation_relation_hi": "सोयाबीन के खेत में जल-निकासी अच्छी होनी चाहिए। पानी भरने से गांठों के जीवाणु मर जाते हैं।",
+    "deficiencies": {
+      "sulfur": {
+        "symptom_en": "Uniform yellowing of younger upper leaves, reduced nodules and low seed oil.",
+        "symptom_hi": "ऊपरी नई पत्तियों का पीला पड़ना और दानों में तेल की कमी।",
+        "action_en": "Apply 20-25 kg elemental sulfur or gypsum @ 200 kg/ha at sowing.",
+        "action_hi": "बुवाई पर 20-25 किग्रा सल्फर या 200 किग्रा जिप्सम प्रति हेक्टेयर डालें।"
+      }
+    }
+  },
+  "apple": {
+    "crop_en": "Apple",
+    "crop_hi": "सेब",
+    "general_npk_ratio": "500:250:500 g/bearing tree",
+    "general_guidance_en": "For mature bearing apple trees (10+ years), apply 500g N, 250g P2O5, and 500-700g K2O per tree in circular basin along canopy dripline. Apply organic manure (40-50 kg FYM) in December-January during dormancy.",
+    "general_guidance_hi": "10 वर्ष से बड़े फलदार सेब के पेड़ के लिए 500g N, 250g P2O5 और 500-700g K2O प्रति पेड़ तौलिए में दें। दिसंबर-जनवरी में सुप्तावस्था में 40-50 किग्रा गोबर खाद डालें।",
+    "stages": {
+      "Vegetative": {
+        "en": "Silver tip / green tip stage (Feb-March): Apply 1/2 Nitrogen and full P & K in basin.",
+        "hi": "सिल्वर टिप अवस्था (फरवरी-मार्च): आधी नाइट्रोजन और पूरा P व K पेड़ के तौलिए में दें।"
+      },
+      "Flowering": {
+        "en": "Pink bud stage: Spray Boron (0.1%) to enhance pollination and fruit set.",
+        "hi": "पिंक बड अवस्था: परागण और फल ठहराव के लिए बोरॉन (0.1%) का छिड़काव करें।"
+      },
+      "Fruit/Grain Formation": {
+        "en": "Fruit development (May-June): Foliar spray of Calcium Chloride (0.5%) to prevent bitter pit.",
+        "hi": "फल विकास (मई-जून): बिटर पिट (फल पर गड्ढे) से बचाव के लिए कैल्शियम क्लोराइड (0.5%) का छिड़काव करें।"
+      }
+    },
+    "irrigation_relation_en": "Drip irrigation or regular basin watering is critical during May-June fruit development to prevent fruit drop.",
+    "irrigation_relation_hi": "मई-जून में फल विकास के दौरान पानी की कमी न होने दें, नहीं तो फल झड़ सकते हैं।",
+    "deficiencies": {
+      "calcium": {
+        "symptom_en": "Bitter pit: small brown sunken corky spots on fruit flesh and skin.",
+        "symptom_hi": "बिटर पिट: सेब के फल की त्वचा और गूदे पर छोटे भूरे धब्बे और कड़वापन।",
+        "action_en": "Spray Calcium Nitrate @ 4-5g per liter water 4 to 5 times from petal fall to harvest.",
+        "action_hi": "पत्ती झड़ने से लेकर कटाई तक 4-5 ग्राम प्रति लीटर कैल्शियम नाइट्रेट का छिड़काव करें।"
+      }
+    }
+  },
+  "grape": {
+    "crop_en": "Grape",
+    "crop_hi": "अंगूर",
+    "general_npk_ratio": "300:200:400 kg/ha",
+    "general_guidance_en": "Grapes are heavy potassium feeders. Apply 1/3rd N and full P after back pruning (April). After forward pruning (October), apply remaining N and 80% of Potash in split fertigation through drip.",
+    "general_guidance_hi": "अंगूर को पोटाश की बहुत अधिक आवश्यकता होती है। अप्रैल छंटाई के बाद 1/3 N और पूरा P दें। अक्टूबर फल छंटाई के बाद शेष N और 80% पोटाश ड्रिप फर्टिगेशन से किस्तों में दें।",
+    "stages": {
+      "Vegetative": {
+        "en": "Post April pruning: Apply FYM (25 t/ha) + Single Super Phosphate (SSP) + 1/3rd Urea.",
+        "hi": "अप्रैल छंटाई के बाद: 25 टन सड़ी गोबर खाद + SSP + 1/3 यूरिया दें।"
+      },
+      "Flowering": {
+        "en": "Pre-bloom stage: Spray Boric acid (0.1%) and Zinc Sulfate (0.1%) for uniform bunch formation.",
+        "hi": "फूल आने से पहले: बोरिक एसिड (0.1%) और जिंक सल्फेट का छिड़काव करें।"
+      },
+      "Fruit/Grain Formation": {
+        "en": "Berry development to veraison (color turning): Feed Potassium Nitrate (13-0-45) and SOP (0-0-50).",
+        "hi": "दाने के विकास से रंग बदलने तक: 13-0-45 और 0-0-50 ड्रिप द्वारा दें ताकि मिठास (TSS) बढ़े।"
+      }
+    },
+    "irrigation_relation_en": "Reduce irrigation slightly at veraison to concentrate sugars and enhance berry crispness.",
+    "irrigation_relation_hi": "अंगूर में रंग बदलने के बाद पानी थोड़ा कम करें ताकि दानों में मिठास और चमक बढ़े।",
+    "deficiencies": {
+      "potassium": {
+        "symptom_en": "Marginal chlorosis turning into edge burn of leaves; uneven bunch ripening and sour berries.",
+        "symptom_hi": "पत्तियों के किनारों का जलना, गुच्छों का असमान पकना और दानों में खट्टापन रहना।",
+        "action_en": "Fertigate Potassium Sulfate (0:0:50) @ 25 kg/ha per week through drip.",
+        "action_hi": "ड्रिप द्वारा प्रति सप्ताह 25 किग्रा पोटेशियम सल्फेट (0:0:50) दें।"
+      }
+    }
+  }
+}

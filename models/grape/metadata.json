@@ -1,0 +1,17 @@
+{
+  "crop": "grape",
+  "model_type": "classification",
+  "classes": [
+    "Grape___Black_rot",
+    "Grape___healthy"
+  ],
+  "weights": "best.pt",
+  "image_size": 224,
+  "epochs": 25,
+  "dataset_version": "1.0.0",
+  "training_device": "0",
+  "train_images": 488,
+  "val_images": 140,
+  "test_images": 72,
+  "batch_size": 32
+}

@@ -1,0 +1,18 @@
+{
+  "crop": "potato",
+  "model_type": "classification",
+  "classes": [
+    "Potato___Early_blight",
+    "Potato___Late_blight",
+    "Potato___healthy"
+  ],
+  "weights": "best.pt",
+  "image_size": 224,
+  "epochs": 25,
+  "dataset_version": "1.0.0",
+  "training_device": "0",
+  "train_images": 732,
+  "val_images": 210,
+  "test_images": 108,
+  "batch_size": 32
+}

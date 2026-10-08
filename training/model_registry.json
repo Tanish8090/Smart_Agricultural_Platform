@@ -1,0 +1,139 @@
+{
+  "device": "0",
+  "trained_models": {
+    "wheat": {
+      "status": "READY",
+      "weights_path": "C:/Users/Tanish/OneDrive/Desktop/SAP 2/models/wheat/best.pt",
+      "model_type": "classification",
+      "classes": [
+        "Wheat___Yellow_rust",
+        "Wheat___healthy"
+      ],
+      "image_size": 224,
+      "epochs": 30
+    },
+    "cotton": {
+      "status": "READY",
+      "weights_path": "C:/Users/Tanish/OneDrive/Desktop/SAP 2/models/cotton/best.pt",
+      "model_type": "classification",
+      "classes": [
+        "Cotton___Bacterial_blight",
+        "Cotton___healthy"
+      ],
+      "image_size": 224,
+      "epochs": 30
+    },
+    "sugarcane": {
+      "status": "READY",
+      "weights_path": "C:/Users/Tanish/OneDrive/Desktop/SAP 2/models/sugarcane/best.pt",
+      "model_type": "classification",
+      "classes": [
+        "Sugarcane___Red_rot",
+        "Sugarcane___healthy"
+      ],
+      "image_size": 224,
+      "epochs": 30
+    },
+    "potato": {
+      "status": "READY",
+      "weights_path": "C:/Users/Tanish/OneDrive/Desktop/SAP 2/models/potato/best.pt",
+      "model_type": "classification",
+      "classes": [
+        "Potato___Late_blight",
+        "Potato___healthy"
+      ],
+      "image_size": 224,
+      "epochs": 30
+    },
+    "rice": {
+      "status": "READY",
+      "weights_path": "C:/Users/Tanish/OneDrive/Desktop/SAP 2/models/rice/best.pt",
+      "model_type": "classification",
+      "classes": [
+        "Rice___Blast",
+        "Rice___healthy"
+      ],
+      "image_size": 224,
+      "epochs": 30
+    },
+    "soybean": {
+      "status": "READY",
+      "weights_path": "C:/Users/Tanish/OneDrive/Desktop/SAP 2/models/soybean/best.pt",
+      "model_type": "classification",
+      "classes": [
+        "Soybean___Rust",
+        "Soybean___healthy"
+      ],
+      "image_size": 224,
+      "epochs": 30
+    },
+    "not_a_leaf": {
+      "status": "READY",
+      "weights_path": "C:/Users/Tanish/OneDrive/Desktop/SAP 2/models/not_a_leaf/best.pt",
+      "model_type": "classification",
+      "classes": [
+        "Not_A_Leaf",
+        "Plant_Leaf"
+      ],
+      "image_size": 224,
+      "epochs": 30
+    }
+  },
+  "not_ready_crops": {
+    "tomato": "DATASET_NOT_READY: No local archive or HF repository present in workspace for Tomato Early Blight & Healthy",
+    "corn": "DATASET_NOT_READY: No local archive or HF repository present in workspace for Corn Common Rust & Healthy",
+    "apple": "DATASET_NOT_READY: No local archive or HF repository present in workspace for Apple Scab & Healthy",
+    "grape": "DATASET_NOT_READY: No local archive or HF repository present in workspace for Grape Downy Mildew & Healthy"
+  },
+  "evaluation_summary": {
+    "wheat": {
+      "accuracy": 0.9464,
+      "precision": 0.9464,
+      "recall": 0.9464,
+      "f1": 0.9461,
+      "test_samples": 56
+    },
+    "cotton": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "test_samples": 271
+    },
+    "sugarcane": {
+      "accuracy": 0.9132,
+      "precision": 0.9132,
+      "recall": 0.9132,
+      "f1": 0.9132,
+      "test_samples": 357
+    },
+    "potato": {
+      "accuracy": 0.9848,
+      "precision": 0.9861,
+      "recall": 0.9848,
+      "f1": 0.9851,
+      "test_samples": 66
+    },
+    "rice": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "test_samples": 337
+    },
+    "soybean": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "test_samples": 161
+    },
+    "not_a_leaf": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "test_samples": 41
+    }
+  }
+}

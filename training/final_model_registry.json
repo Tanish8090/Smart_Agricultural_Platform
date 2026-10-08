@@ -1,0 +1,116 @@
+{
+  "wheat": {
+    "crop": "wheat",
+    "model": "wheat.onnx",
+    "classes": [
+      "Wheat___Yellow_rust",
+      "Wheat___healthy"
+    ],
+    "onnx_path": "models/wheat/best.onnx",
+    "pt_path": "models/wheat/best.pt"
+  },
+  "cotton": {
+    "crop": "cotton",
+    "model": "cotton.onnx",
+    "classes": [
+      "Cotton___Bacterial_blight",
+      "Cotton___healthy"
+    ],
+    "onnx_path": "models/cotton/best.onnx",
+    "pt_path": "models/cotton/best.pt"
+  },
+  "sugarcane": {
+    "crop": "sugarcane",
+    "model": "sugarcane.onnx",
+    "classes": [
+      "Sugarcane___Red_rot",
+      "Sugarcane___healthy"
+    ],
+    "onnx_path": "models/sugarcane/best.onnx",
+    "pt_path": "models/sugarcane/best.pt"
+  },
+  "potato": {
+    "crop": "potato",
+    "model": "potato.onnx",
+    "classes": [
+      "Potato___Early_blight",
+      "Potato___Late_blight",
+      "Potato___healthy"
+    ],
+    "onnx_path": "models/potato/best.onnx",
+    "pt_path": "models/potato/best.pt"
+  },
+  "rice": {
+    "crop": "rice",
+    "model": "rice.onnx",
+    "classes": [
+      "Rice___Blast",
+      "Rice___Brown_spot",
+      "Rice___healthy"
+    ],
+    "onnx_path": "models/rice/best.onnx",
+    "pt_path": "models/rice/best.pt"
+  },
+  "soybean": {
+    "crop": "soybean",
+    "model": "soybean.onnx",
+    "classes": [
+      "Soybean___Rust",
+      "Soybean___healthy"
+    ],
+    "onnx_path": "models/soybean/best.onnx",
+    "pt_path": "models/soybean/best.pt"
+  },
+  "tomato": {
+    "crop": "tomato",
+    "model": "tomato.onnx",
+    "classes": [
+      "Tomato___Early_blight",
+      "Tomato___Late_blight",
+      "Tomato___healthy"
+    ],
+    "onnx_path": "models/tomato/best.onnx",
+    "pt_path": "models/tomato/best.pt"
+  },
+  "corn": {
+    "crop": "corn",
+    "model": "corn.onnx",
+    "classes": [
+      "Corn___Common_rust",
+      "Corn___Leaf_blight",
+      "Corn___healthy"
+    ],
+    "onnx_path": "models/corn/best.onnx",
+    "pt_path": "models/corn/best.pt"
+  },
+  "apple": {
+    "crop": "apple",
+    "model": "apple.onnx",
+    "classes": [
+      "Apple___Scab",
+      "Apple___healthy"
+    ],
+    "onnx_path": "models/apple/best.onnx",
+    "pt_path": "models/apple/best.pt"
+  },
+  "grape": {
+    "crop": "grape",
+    "model": "grape.onnx",
+    "classes": [
+      "Grape___Black_rot",
+      "Grape___healthy"
+    ],
+    "onnx_path": "models/grape/best.onnx",
+    "pt_path": "models/grape/best.pt"
+  },
+  "not_a_leaf": {
+    "crop": "not_a_leaf",
+    "model": "not_a_leaf.onnx",
+    "classes": [
+      "Not_A_Leaf",
+      "Plant_Leaf"
+    ],
+    "onnx_path": "models/not_a_leaf/best.onnx",
+    "pt_path": "models/not_a_leaf/best.pt"
+  }
+}

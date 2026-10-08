@@ -1,0 +1,219 @@
+{
+  "208001": {
+    "city": "Kanpur",
+    "district": "Kanpur Nagar",
+    "state": "Uttar Pradesh",
+    "latitude": 26.4499,
+    "longitude": 80.3319
+  },
+  "462001": {
+    "city": "Bhopal",
+    "district": "Bhopal",
+    "state": "Madhya Pradesh",
+    "latitude": 23.2599,
+    "longitude": 77.4126
+  },
+  "452001": {
+    "city": "Indore",
+    "district": "Indore",
+    "state": "Madhya Pradesh",
+    "latitude": 22.7196,
+    "longitude": 75.8577
+  },
+  "226001": {
+    "city": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "latitude": 26.8467,
+    "longitude": 80.9462
+  },
+  "141001": {
+    "city": "Ludhiana",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "latitude": 30.9010,
+    "longitude": 75.8573
+  },
+  "800001": {
+    "city": "Patna",
+    "district": "Patna",
+    "state": "Bihar",
+    "latitude": 25.5941,
+    "longitude": 85.1376
+  },
+  "422001": {
+    "city": "Nashik",
+    "district": "Nashik",
+    "state": "Maharashtra",
+    "latitude": 19.9975,
+    "longitude": 73.7898
+  },
+  "282001": {
+    "city": "Agra",
+    "district": "Agra",
+    "state": "Uttar Pradesh",
+    "latitude": 27.1767,
+    "longitude": 78.0081
+  },
+  "221001": {
+    "city": "Varanasi",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "latitude": 25.3176,
+    "longitude": 82.9739
+  },
+  "250001": {
+    "city": "Meerut",
+    "district": "Meerut",
+    "state": "Uttar Pradesh",
+    "latitude": 28.9845,
+    "longitude": 77.7064
+  },
+  "243001": {
+    "city": "Bareilly",
+    "district": "Bareilly",
+    "state": "Uttar Pradesh",
+    "latitude": 28.3670,
+    "longitude": 79.4304
+  },
+  "211001": {
+    "city": "Prayagraj",
+    "district": "Prayagraj",
+    "state": "Uttar Pradesh",
+    "latitude": 25.4358,
+    "longitude": 81.8463
+  },
+  "273001": {
+    "city": "Gorakhpur",
+    "district": "Gorakhpur",
+    "state": "Uttar Pradesh",
+    "latitude": 26.7606,
+    "longitude": 83.3732
+  },
+  "482001": {
+    "city": "Jabalpur",
+    "district": "Jabalpur",
+    "state": "Madhya Pradesh",
+    "latitude": 23.1815,
+    "longitude": 79.9864
+  },
+  "474001": {
+    "city": "Gwalior",
+    "district": "Gwalior",
+    "state": "Madhya Pradesh",
+    "latitude": 26.2183,
+    "longitude": 78.1828
+  },
+  "456001": {
+    "city": "Ujjain",
+    "district": "Ujjain",
+    "state": "Madhya Pradesh",
+    "latitude": 23.1765,
+    "longitude": 75.7885
+  },
+  "144001": {
+    "city": "Jalandhar",
+    "district": "Jalandhar",
+    "state": "Punjab",
+    "latitude": 31.3260,
+    "longitude": 75.5762
+  },
+  "151001": {
+    "city": "Bathinda",
+    "district": "Bathinda",
+    "state": "Punjab",
+    "latitude": 30.2110,
+    "longitude": 74.9455
+  },
+  "147001": {
+    "city": "Patiala",
+    "district": "Patiala",
+    "state": "Punjab",
+    "latitude": 30.3398,
+    "longitude": 76.3869
+  },
+  "143001": {
+    "city": "Amritsar",
+    "district": "Amritsar",
+    "state": "Punjab",
+    "latitude": 31.6340,
+    "longitude": 74.8723
+  },
+  "132001": {
+    "city": "Karnal",
+    "district": "Karnal",
+    "state": "Haryana",
+    "latitude": 29.6857,
+    "longitude": 76.9905
+  },
+  "134003": {
+    "city": "Ambala",
+    "district": "Ambala",
+    "state": "Haryana",
+    "latitude": 30.3782,
+    "longitude": 76.7767
+  },
+  "125001": {
+    "city": "Hisar",
+    "district": "Hisar",
+    "state": "Haryana",
+    "latitude": 29.1492,
+    "longitude": 75.7217
+  },
+  "302001": {
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "latitude": 26.9124,
+    "longitude": 75.7873
+  },
+  "380001": {
+    "city": "Ahmedabad",
+    "district": "Ahmedabad",
+    "state": "Gujarat",
+    "latitude": 23.0225,
+    "longitude": 72.5714
+  },
+  "411001": {
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "latitude": 18.5204,
+    "longitude": 73.8567
+  },
+  "440001": {
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "latitude": 21.1458,
+    "longitude": 79.0882
+  },
+  "842001": {
+    "city": "Muzaffarpur",
+    "district": "Muzaffarpur",
+    "state": "Bihar",
+    "latitude": 26.1209,
+    "longitude": 85.3647
+  },
+  "823001": {
+    "city": "Gaya",
+    "district": "Gaya",
+    "state": "Bihar",
+    "latitude": 24.7914,
+    "longitude": 85.0002
+  },
+  "492001": {
+    "city": "Raipur",
+    "district": "Raipur",
+    "state": "Chhattisgarh",
+    "latitude": 21.2514,
+    "longitude": 81.6296
+  },
+  "834001": {
+    "city": "Ranchi",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "latitude": 23.3441,
+    "longitude": 85.3096
+  }
+}

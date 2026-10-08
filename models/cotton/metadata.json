@@ -1,0 +1,17 @@
+{
+  "crop": "cotton",
+  "model_type": "classification",
+  "classes": [
+    "Cotton___Bacterial_blight",
+    "Cotton___healthy"
+  ],
+  "weights": "best.pt",
+  "image_size": 224,
+  "epochs": 30,
+  "dataset_version": "1.0.0",
+  "training_device": "0",
+  "train_images": 1262,
+  "val_images": 269,
+  "test_images": 271,
+  "batch_size": 32
+}

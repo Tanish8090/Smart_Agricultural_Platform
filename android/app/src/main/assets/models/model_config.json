@@ -1,0 +1,83 @@
+{
+  "wheat": {
+    "model": "wheat.onnx",
+    "classes": [
+      "Wheat___Yellow_rust",
+      "Wheat___healthy"
+    ]
+  },
+  "cotton": {
+    "model": "cotton.onnx",
+    "classes": [
+      "Cotton___Bacterial_blight",
+      "Cotton___healthy"
+    ]
+  },
+  "sugarcane": {
+    "model": "sugarcane.onnx",
+    "classes": [
+      "Sugarcane___Red_rot",
+      "Sugarcane___healthy"
+    ]
+  },
+  "potato": {
+    "model": "potato.onnx",
+    "classes": [
+      "Potato___Early_blight",
+      "Potato___Late_blight",
+      "Potato___healthy"
+    ]
+  },
+  "rice": {
+    "model": "rice.onnx",
+    "classes": [
+      "Rice___Blast",
+      "Rice___Brown_spot",
+      "Rice___healthy"
+    ]
+  },
+  "soybean": {
+    "model": "soybean.onnx",
+    "classes": [
+      "Soybean___Rust",
+      "Soybean___healthy"
+    ]
+  },
+  "tomato": {
+    "model": "tomato.onnx",
+    "classes": [
+      "Tomato___Early_blight",
+      "Tomato___Late_blight",
+      "Tomato___healthy"
+    ]
+  },
+  "corn": {
+    "model": "corn.onnx",
+    "classes": [
+      "Corn___Common_rust",
+      "Corn___Leaf_blight",
+      "Corn___healthy"
+    ]
+  },
+  "apple": {
+    "model": "apple.onnx",
+    "classes": [
+      "Apple___Scab",
+      "Apple___healthy"
+    ]
+  },
+  "grape": {
+    "model": "grape.onnx",
+    "classes": [
+      "Grape___Black_rot",
+      "Grape___healthy"
+    ]
+  },
+  "not_a_leaf": {
+    "model": "not_a_leaf.onnx",
+    "classes": [
+      "Not_A_Leaf",
+      "Plant_Leaf"
+    ]
+  }
+}
