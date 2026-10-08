@@ -292,7 +292,7 @@ def generate_kisan_chat_response(
         if genai is not None and types is not None:
             try:
                 http_opts = types.HttpOptions(
-                    timeout=15000,
+                    timeout=10000,
                     retry_options=types.HttpRetryOptions(attempts=1)
                 )
                 client = genai.Client(api_key=key, http_options=http_opts)
@@ -347,10 +347,9 @@ def generate_kisan_chat_response(
                 err_str = str(e)
                 last_error = f"SDK {model_name}: {err_str[:120]}"
                 print(f"[POST /api/chat] Model {model_name} SDK error: {err_str[:120]}", flush=True)
-                if '503' in err_str or '429' in err_str or '404' in err_str:
-                    continue
+                continue
 
-        # 2. Resilient Direct REST fallback to official Gemini endpoint
+        # 2. Resilient Direct REST fallback to official Gemini endpoint (used if SDK not installed)
         payload = {
             'system_instruction': {
                 'parts': [{'text': system_instruction}]
