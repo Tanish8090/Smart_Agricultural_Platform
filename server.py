@@ -9,6 +9,7 @@ import sys
 import json
 import base64
 import traceback
+import asyncio
 from typing import Optional
 
 # Enable UTF-8 encoding on console output
@@ -253,7 +254,8 @@ async def chat_api(request: Request):
             )
 
         if kisan_ai is not None:
-            result = kisan_ai.generate_kisan_chat_response(
+            result = await asyncio.to_thread(
+                kisan_ai.generate_kisan_chat_response,
                 message=message,
                 context=context,
                 history=history,
@@ -262,7 +264,8 @@ async def chat_api(request: Request):
                 language=language
             )
         else:
-            result = platform_helpers.generate_kisan_chat_response(
+            result = await asyncio.to_thread(
+                platform_helpers.generate_kisan_chat_response,
                 message=message,
                 context=context,
                 history=history,

@@ -291,7 +291,11 @@ def generate_kisan_chat_response(
         # 1. Try official google-genai SDK first via Chat API
         if genai is not None and types is not None:
             try:
-                client = genai.Client(api_key=key)
+                http_opts = types.HttpOptions(
+                    timeout=15000,
+                    retry_options=types.HttpRetryOptions(attempts=1)
+                )
+                client = genai.Client(api_key=key, http_options=http_opts)
 
                 # Format history for SDK
                 sdk_history = []
@@ -367,7 +371,7 @@ def generate_kisan_chat_response(
             method='POST'
         )
         try:
-            with urllib.request.urlopen(req, timeout=25, context=ctx) as resp:
+            with urllib.request.urlopen(req, timeout=12, context=ctx) as resp:
                 res_json = json.loads(resp.read().decode('utf-8'))
                 candidates_out = res_json.get('candidates', [])
                 if candidates_out:
